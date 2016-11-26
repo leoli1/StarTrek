@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Star Trek\Scripts\CameraScript.cs" />
+     <Compile Include="Assets\Star Trek\Scripts\Player.cs" />
      <Compile Include="Assets\Star Trek\Scripts\SchildScript.cs" />
      <Compile Include="Assets\Star Trek\Scripts\tObjScript.cs" />
  <Reference Include="UnityEngine.UI">
