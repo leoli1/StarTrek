@@ -25,7 +25,7 @@ public class CameraScript : MonoBehaviour {
 		//camera_center.transform.rotation = rot;
 		Vector3 r = camera_center.transform.localRotation.eulerAngles;
 		Quaternion new_r = Quaternion.identity;
-		new_r.eulerAngles = new Vector3 (30, Player.player.transform.rotation.y, r.z);
+		new_r.eulerAngles = new Vector3 (30, r.y, r.z);
 		camera_center.transform.localRotation = new_r;
 		if (camera.orthographic) {
 			transform.localPosition = new Vector3 (0, 0, this.camera_ortho_size * (-3));
