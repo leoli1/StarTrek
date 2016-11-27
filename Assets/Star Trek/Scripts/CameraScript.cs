@@ -21,9 +21,11 @@ public class CameraScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		camera_center.transform.position = Player.player.transform.position;
+		Quaternion rot = Quaternion.Euler (new Vector3 (camera_center.transform.rotation.x, Player.player.transform.rotation.y, camera_center.transform.rotation.z));
+		//camera_center.transform.rotation = rot;
 		Vector3 r = camera_center.transform.localRotation.eulerAngles;
 		Quaternion new_r = Quaternion.identity;
-		new_r.eulerAngles = new Vector3 (30, r.y, r.z);
+		new_r.eulerAngles = new Vector3 (30, Player.player.transform.rotation.y, r.z);
 		camera_center.transform.localRotation = new_r;
 		if (camera.orthographic) {
 			transform.localPosition = new Vector3 (0, 0, this.camera_ortho_size * (-3));

@@ -17,7 +17,7 @@ public class tObjScript : MonoBehaviour {
 	
 	}
 	void OnCollisionEnter(Collision collision){
-		if (collision.gameObject.name == "Schild") {
+		if (collision.gameObject.tag == "Player") {
 			ContactPoint contact = collision.contacts [0];
 			schild.GetComponent<SchildScript> ().col (contact.point);
 			Destroy (gameObject);
