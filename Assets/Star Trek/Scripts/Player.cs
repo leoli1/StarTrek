@@ -8,6 +8,8 @@ public class Player : MonoBehaviour {
 	public float velocity;
 	public float accel = 2;
 
+	public float max_speed = 20;
+
 	public float rotation_speed = 20;
 
 	Rigidbody rigidbody;
@@ -25,7 +27,7 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		velo_input ();
-		rigidbody.velocity = velocity*transform.forward*5;
+		rigidbody.velocity = velocity*transform.forward*max_speed/4;
 		rot_input ();
 	}
 

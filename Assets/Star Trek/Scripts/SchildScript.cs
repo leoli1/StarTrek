@@ -16,9 +16,6 @@ public class SchildScript : MonoBehaviour {
 
 	Mesh mesh;
 
-
-
-
 	// Use this for initialization
 	void Start () {
 		mesh = this.GetComponent<MeshFilter> ().mesh;
