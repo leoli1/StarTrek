@@ -1,0 +1,21 @@
+digraph "Spaceship.apply_statuseffect"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node27 [label="Spaceship.apply_statuseffect",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node27 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node28 [label="SpaceshipModule.get\l_target_object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship_module.html#a49cfd4d32ed594c4aa7f123d2828f857",tooltip="Gets the target object. (Only Player!!!) "];
+  Node27 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node29 [label="Weapon.get_description_text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_weapon.html#a8fcfb4f08ea22a8fc60790770a58b985",tooltip="Erstellt einen Text, der im Inventar angezeigt wird, wenn der Mauszeiger auf dem Item ist ..."];
+  Node27 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node30 [label="Spaceship.apply_statuseffects",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a4170fcea7d1c1cb131e634a28ad3b271",tooltip="Fügt mehrere StatusEffects hinzu "];
+  Node30 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node27 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node31 [label="Spaceship.decloak",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a46d165fefc78bd0cd729429b59a6bbb6",tooltip="Enttarnt das Raumschiff "];
+  Node31 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node31 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node32 [label="Spaceship.apply_damage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#aec76ac225db6e42b52afb3aac04f7cad",tooltip="Richtet Schaden am Raumschiff an "];
+  Node31 -> Node33 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node33 [label="Spaceship.attack_enemy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a4bce8027749e4c12088266071ba6a5cc",tooltip="Greift den Gegner an "];
+}

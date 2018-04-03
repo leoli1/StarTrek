@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e8c2f14428547c4a9912a073e034f8, type: 3}
+  m_Name: EnterpriseE
+  m_EditorClassIdentifier: 
+  ID: 2
+  inventory_tex: {fileID: 0}
+  name: Enterprise E
+  mark_number: 0
+  cost: 0
+  item_type: 4
+  spaceship_object: {fileID: 1786650348441060, guid: bba79e023baed4db792fa63840a2956b,
+    type: 2}
+  raumschiff_type: 2
+  raw_raumschiff_type: 2
+  rotation_speed: 35
+  acceleration: 1.5
+  structural_integrity: 250
+  structural_integrity_regeneration_rate: 0.2
+  spaceship_module_capacity: 4
+  standard_schild: {fileID: 11400000, guid: a4f307f5e936d46dba6624f41a7e3aa6, type: 2}
+  standard_impuls_antrieb: {fileID: 11400000, guid: 1515bcefbc47e4e88bc065ca3013e2df,
+    type: 2}
+  standard_warp_antrieb: {fileID: 11400000, guid: 4fee08cee9046403eaedf97ed4c4717e,
+    type: 2}
+  standard_top_weapons:
+  - {fileID: 11400000, guid: 00ed25457d2744cc998668da0075006c, type: 2}
+  - {fileID: 11400000, guid: 00ed25457d2744cc998668da0075006c, type: 2}
+  - {fileID: 11400000, guid: aa8d13f860d14466fb4420755409cecc, type: 2}
+  standard_bot_weapons:
+  - {fileID: 11400000, guid: 00ed25457d2744cc998668da0075006c, type: 2}
+  - {fileID: 11400000, guid: 8ac02d7325cc44e329c791f0e958faa0, type: 2}
+  standard_spaceship_modules:
+  - {fileID: 11400000, guid: 1988086cc98a84ab3b63f3e89c937d0e, type: 2}
+  - {fileID: 11400000, guid: 3ed228bb4c72f4062a722e1e3465edf5, type: 2}
+  - {fileID: 11400000, guid: 3a171ab7aaf1c4b7ea5686bd934a0b3f, type: 2}
+  - {fileID: 11400000, guid: 294b92e94fd6a4dada18cea1cbda2fd8, type: 2}
+  - {fileID: 11400000, guid: 56038f2d3146148718fe9d5f004fecd4, type: 2}
+  - {fileID: 11400000, guid: 63e8019e609144d8cbab2cb47c7eac09, type: 2}

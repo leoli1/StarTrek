@@ -1,0 +1,32 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Assets/Stor Trok/Scripts/SceneMasters/LevelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/PostProcessing/Resources/Shaders/Bloom.shader" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Data/GamePreferences.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/AudioMaster.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Spaceship/Spaceship.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Items/Item.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Asteroid.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Utils.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/DestroyableObject.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Player/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/SceneMasters/StartSceneMaster.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Data/PlayerData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Data/SaveData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Player/PlayerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/UI/UI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/UI/PauseMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/UI/TimeScale.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/ObjectAura.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/UI/InteractiveMessage.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Items/SpaceshipModules/TractorBeamUpdate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Stor Trok/Scripts/Spaceship/Schild.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

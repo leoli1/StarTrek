@@ -1,0 +1,14 @@
+digraph "CloakingDevice"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node4 [label="CloakingDevice",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SpaceshipModule",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship_module.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Item",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_item.html"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ScriptableObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" module_effects" ,fontname="Helvetica"];
+  Node8 [label="StatusEffect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_status_effect.html"];
+}

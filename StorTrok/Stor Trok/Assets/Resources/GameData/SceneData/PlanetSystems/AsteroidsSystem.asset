@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e30e3f0ed45e487eb4f30b049e624c8, type: 3}
+  m_Name: AsteroidsSystem
+  m_EditorClassIdentifier: 
+  ID: 3
+  system_name: Asteroiden-System
+  description: Das ist das Asteroiden-System
+  scene_name: 
+  only_mission: 1
+  mission_data: {fileID: 11400000, guid: c19b27738a59c4550ba16e870fa11e4c, type: 2}

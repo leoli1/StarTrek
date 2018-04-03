@@ -1,0 +1,22 @@
+Instructions:
+
+Neues Raumschiff:
+-import model
+-prefab erstellen:
+	- im Raumschiff-script zum AlleRaumschiffe-Enum und zur raumschiffe-Liste das Raumschiff hinzufügen
+	- spaceship script (set raumschiff type, raw_raumschiff_type, max_structural_integrity, accel, rotation_speed)
+	- set weapon positions
+	- Schild
+	- auspuff, light ...
+	
+	
+Neue Waffe:
+wenn neue graphik/model:
+	-import model, falls nötig
+	-prefab erstellen:
+		wenn torpedo:
+			-collider (isTrigger auf true!!)
+			-rigidbody ohne gravity
+		
+		-torpedo/phaser/puls-phaser-update script
+-in der entsprechenden item klasse die waffe in die liste und in das enum eintragen und wenn benötigt den neuen prefab im script aufrufen

@@ -1,0 +1,23 @@
+digraph "Spaceship.apply_damage"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="Spaceship.apply_damage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spaceship.check_destroyed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a3f59582cf969851ab6633b4cf1047f20",tooltip="Prüft, ob das Raumschiff zerstört werden soll und tut dies ggf. "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spaceship.destroy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a720b65b98cede503822fcb0141873f97",tooltip="Zerstört das Raumschiff "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="DeformMesh.deform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_deform_mesh.html#ad2caad01ccc1f4bb7331ca536bff0ead",tooltip="Verformt das Mesh, auf dem dieses Script ist, indem alle Vertices in zufällige Richtungen verschoben ..."];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spaceship.get_spaceship",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a46ebdafb571812867be422a6beb4ad21",tooltip="Findet die Spaceship-Instanz, die auf dem GameObject oder in einem seiner Parents ist..."];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spaceship.decloak",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a46d165fefc78bd0cd729429b59a6bbb6",tooltip="Enttarnt das Raumschiff "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spaceship.apply_statuseffect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a0e562e25b6f8186c569fbc0577ef3bb6",tooltip="Fügt einen neuen StatusEffect zu dem Raumschiff hinzu "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spaceship.apply_item\l_stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a465e9ba15923826055b2fd43be83d635",tooltip="Setzt die Schild- und Geschwindigkeitswerte den Items entsprechend fest "];
+  Node4 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Spaceship.get_angle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a8cfcff835d6cba6b9fb8aa6841aa0cba",tooltip="Gibt den Winkel der der Punkt global_pos auf der Raumschiff-Ebene mit dem Vorwärtsvektor bildet 0° be..."];
+}

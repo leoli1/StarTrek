@@ -1,0 +1,13 @@
+digraph "Spaceship.warp_in"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node151 [label="Spaceship.warp_in",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node151 -> Node152 [color="midnightblue",fontsize="10",style="solid"];
+  Node152 [label="Spaceship.set_shield\l_indicator_color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#ade12946ccbbfffb92a864b710dc2217d",tooltip="Legt die Farben für die Schild-Viertelkreise fest "];
+  Node152 -> Node153 [color="midnightblue",fontsize="10",style="solid"];
+  Node153 [label="Spaceship.set_shieldpart\l_color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a0eaf7f4995770c01eafeabe3a43c2af3",tooltip="Legt die Farbe für ein Viertelkreis-Schildobject fest "];
+  Node152 -> Node154 [color="midnightblue",fontsize="10",style="solid"];
+  Node154 [label="Spaceship.get_shield\l_color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a78e68df6007c48431f1bddf304226948",tooltip="Berechnet die Schildfarbe für die prozentuale Schildstärke p "];
+}

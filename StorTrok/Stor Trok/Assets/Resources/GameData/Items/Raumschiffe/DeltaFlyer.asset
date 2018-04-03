@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e8c2f14428547c4a9912a073e034f8, type: 3}
+  m_Name: DeltaFlyer
+  m_EditorClassIdentifier: 
+  ID: 21
+  inventory_tex: {fileID: 0}
+  name: Delta-Flyer
+  mark_number: 0
+  cost: 0
+  item_type: 4
+  spaceship_object: {fileID: 1116052105595106, guid: 5f8ebcfd3ec5543828abc862dd788fcb,
+    type: 2}
+  raumschiff_type: 4
+  raw_raumschiff_type: 4
+  rotation_speed: 90
+  acceleration: 2
+  structural_integrity: 100
+  structural_integrity_regeneration_rate: 0.03
+  spaceship_module_capacity: 1
+  standard_schild: {fileID: 11400000, guid: a4f307f5e936d46dba6624f41a7e3aa6, type: 2}
+  standard_impuls_antrieb: {fileID: 11400000, guid: 1515bcefbc47e4e88bc065ca3013e2df,
+    type: 2}
+  standard_warp_antrieb: {fileID: 11400000, guid: 4fee08cee9046403eaedf97ed4c4717e,
+    type: 2}
+  standard_top_weapons:
+  - {fileID: 11400000, guid: 00ed25457d2744cc998668da0075006c, type: 2}
+  - {fileID: 11400000, guid: 4362dc850b8ef403cbe79d5a12fcf9b4, type: 2}
+  standard_bot_weapons:
+  - {fileID: 11400000, guid: 8ac02d7325cc44e329c791f0e958faa0, type: 2}
+  standard_spaceship_modules:
+  - {fileID: 11400000, guid: ab29152f9b171497eafff55029cb4147, type: 2}

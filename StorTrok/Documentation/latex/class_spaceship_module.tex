@@ -1,0 +1,111 @@
+\hypertarget{class_spaceship_module}{}\section{Spaceship\+Module Class Reference}
+\label{class_spaceship_module}\index{Spaceship\+Module@{Spaceship\+Module}}
+Inheritance diagram for Spaceship\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_spaceship_module}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \hyperlink{class_spaceship_module_a787019cbebc400d17dc7233ca315c6da}{get\+\_\+description\+\_\+text} ()
+\begin{DoxyCompactList}\small\item\em Erstellt einen Text, der im \hyperlink{class_inventar}{Inventar} angezeigt wird, wenn der Mauszeiger auf dem \hyperlink{class_item}{Item} ist \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spaceship_module_ad6c93bf37263a8e1c52bca757505b692}\label{class_spaceship_module_ad6c93bf37263a8e1c52bca757505b692}} 
+bool {\bfseries can\+\_\+be\+\_\+used} ()
+\item 
+Game\+Object \hyperlink{class_spaceship_module_a49cfd4d32ed594c4aa7f123d2828f857}{get\+\_\+target\+\_\+object} ()
+\begin{DoxyCompactList}\small\item\em Gets the target object. (Only Player!!!) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spaceship_module_a0c5e093127af23cd68607eab7aa79de4}\label{class_spaceship_module_a0c5e093127af23cd68607eab7aa79de4}} 
+virtual bool {\bfseries check\+\_\+effect} ()
+\item 
+\mbox{\Hypertarget{class_spaceship_module_a93a9cd38c241da4081711ff8e627969d}\label{class_spaceship_module_a93a9cd38c241da4081711ff8e627969d}} 
+virtual void {\bfseries do\+\_\+effect} ()
+\item 
+\mbox{\Hypertarget{class_spaceship_module_a4dee5c6e7f09df77ab9507f83660e88e}\label{class_spaceship_module_a4dee5c6e7f09df77ab9507f83660e88e}} 
+void {\bfseries apply\+\_\+effects} ()
+\item 
+\mbox{\Hypertarget{class_spaceship_module_ada592d0f49fb92822905aef8dc370820}\label{class_spaceship_module_ada592d0f49fb92822905aef8dc370820}} 
+void {\bfseries apply\+\_\+effect} (\hyperlink{class_status_effect}{Status\+Effect} ef)
+\item 
+\mbox{\Hypertarget{class_spaceship_module_a752dd8a75e7b2a7aa1336222837a1a49}\label{class_spaceship_module_a752dd8a75e7b2a7aa1336222837a1a49}} 
+virtual void {\bfseries animation} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_spaceship_module_a9babd33ad1962f515a84515e8d716026}\label{class_spaceship_module_a9babd33ad1962f515a84515e8d716026}} 
+static T {\bfseries get\+\_\+module\+\_\+of\+\_\+type$<$ T $>$} (List$<$ \hyperlink{class_spaceship_module}{Spaceship\+Module} $>$ modules)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_spaceship_module_aefd187543df78475abf64860404fa7b9}\label{class_spaceship_module_aefd187543df78475abf64860404fa7b9}} 
+\hyperlink{class_status_effect}{Status\+Effect} \mbox{[}$\,$\mbox{]} {\bfseries module\+\_\+effects}
+\item 
+\mbox{\Hypertarget{class_spaceship_module_ae7a6ed87ea936e35308d4e88254505f4}\label{class_spaceship_module_ae7a6ed87ea936e35308d4e88254505f4}} 
+Module\+Targets {\bfseries target\+\_\+type}
+\item 
+\mbox{\Hypertarget{class_spaceship_module_ad2b081693b9b688ac7defa85cf456f69}\label{class_spaceship_module_ad2b081693b9b688ac7defa85cf456f69}} 
+Game\+Object {\bfseries graphics\+\_\+object}
+\item 
+\mbox{\Hypertarget{class_spaceship_module_ad6fe6fc9b98c89629a7d7e38f36ca492}\label{class_spaceship_module_ad6fe6fc9b98c89629a7d7e38f36ca492}} 
+Game\+Object {\bfseries impact\+\_\+effect}
+\item 
+\mbox{\Hypertarget{class_spaceship_module_a792486862ce07fee4e77e2911a348e6c}\label{class_spaceship_module_a792486862ce07fee4e77e2911a348e6c}} 
+Game\+Object {\bfseries target\+\_\+object}
+\item 
+\mbox{\Hypertarget{class_spaceship_module_a25a1e995f4b514743d45a4b60fcef711}\label{class_spaceship_module_a25a1e995f4b514743d45a4b60fcef711}} 
+Game\+Object {\bfseries cast\+\_\+object}
+\item 
+\mbox{\Hypertarget{class_spaceship_module_a63d2ef58c745bf8d3481eb5e8d63b8ce}\label{class_spaceship_module_a63d2ef58c745bf8d3481eb5e8d63b8ce}} 
+float {\bfseries use\+\_\+cooldown}
+\item 
+\mbox{\Hypertarget{class_spaceship_module_a58b067b3b1975a76a85d43399973f4e2}\label{class_spaceship_module_a58b067b3b1975a76a85d43399973f4e2}} 
+bool {\bfseries can\+\_\+be\+\_\+used\+\_\+in\+\_\+battle} = true
+\item 
+\mbox{\Hypertarget{class_spaceship_module_a1beada7d1235d006c9bce9d09e81869c}\label{class_spaceship_module_a1beada7d1235d006c9bce9d09e81869c}} 
+bool {\bfseries can\+\_\+be\+\_\+used\+\_\+while\+\_\+cloaking} = false
+\item 
+\mbox{\Hypertarget{class_spaceship_module_ac78a8369ddaf8f7bc0bd079e0a51f197}\label{class_spaceship_module_ac78a8369ddaf8f7bc0bd079e0a51f197}} 
+float {\bfseries last\+\_\+time\+\_\+used} = -\/1000
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_spaceship_module_a787019cbebc400d17dc7233ca315c6da}\label{class_spaceship_module_a787019cbebc400d17dc7233ca315c6da}} 
+\index{Spaceship\+Module@{Spaceship\+Module}!get\+\_\+description\+\_\+text@{get\+\_\+description\+\_\+text}}
+\index{get\+\_\+description\+\_\+text@{get\+\_\+description\+\_\+text}!Spaceship\+Module@{Spaceship\+Module}}
+\subsubsection{\texorpdfstring{get\+\_\+description\+\_\+text()}{get\_description\_text()}}
+{\footnotesize\ttfamily override string Spaceship\+Module.\+get\+\_\+description\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Erstellt einen Text, der im \hyperlink{class_inventar}{Inventar} angezeigt wird, wenn der Mauszeiger auf dem \hyperlink{class_item}{Item} ist 
+
+\begin{DoxyReturn}{Returns}
+The description text.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_item_ab868f8ccad92378f7352e3a9e0f755ff}{Item}.
+
+\mbox{\Hypertarget{class_spaceship_module_a49cfd4d32ed594c4aa7f123d2828f857}\label{class_spaceship_module_a49cfd4d32ed594c4aa7f123d2828f857}} 
+\index{Spaceship\+Module@{Spaceship\+Module}!get\+\_\+target\+\_\+object@{get\+\_\+target\+\_\+object}}
+\index{get\+\_\+target\+\_\+object@{get\+\_\+target\+\_\+object}!Spaceship\+Module@{Spaceship\+Module}}
+\subsubsection{\texorpdfstring{get\+\_\+target\+\_\+object()}{get\_target\_object()}}
+{\footnotesize\ttfamily Game\+Object Spaceship\+Module.\+get\+\_\+target\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the target object. (Only Player!!!) 
+
+\begin{DoxyReturn}{Returns}
+The target object.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Leonard/\+Desktop/\+Stor\+Trok/\+Stor Trok/\+Assets/\+Stor Trok/\+Scripts/\+Items/\+Spaceship\+Modules/Spaceship\+Module.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+digraph "Spaceship.fix_rotation"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node79 [label="Spaceship.fix_rotation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node79 -> Node80 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node80 [label="Spaceship.fix_z_rotation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#ae5251fec3b08bf9b4e34e2e854e27e9f",tooltip="Passt die lokale z-Rotation an "];
+  Node79 -> Node81 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node81 [label="Spaceship.fix_x_rotation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#af4e61eb0614f6933afff28f8f12bbdb9",tooltip="Passt die lokale-x-Rotation an "];
+}

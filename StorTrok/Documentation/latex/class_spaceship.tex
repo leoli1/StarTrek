@@ -1,0 +1,1274 @@
+\hypertarget{class_spaceship}{}\section{Spaceship Class Reference}
+\label{class_spaceship}\index{Spaceship@{Spaceship}}
+Inheritance diagram for Spaceship\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_spaceship}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_spaceship_a65c885ff5b2c4b2142d02ed093d734a2}{setup\+\_\+standard\+\_\+items} ()
+\begin{DoxyCompactList}\small\item\em Legt die Items fest, die standardmäßig auf dem \hyperlink{class_raumschiff}{Raumschiff} vorhanden sind. (Das gilt nicht für den Spieler selbst, da dieser auch eigene Item-\/\+Kombinationen auf seinem \hyperlink{class_raumschiff}{Raumschiff} haben kann.) \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a465e9ba15923826055b2fd43be83d635}{apply\+\_\+item\+\_\+stats} ()
+\begin{DoxyCompactList}\small\item\em Setzt die Schild-\/ und Geschwindigkeitswerte den Items entsprechend fest \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a51fd63c3c0bf5f1bb5d5d7e05db87056}{neues\+\_\+schild} (\hyperlink{class_schild_item}{Schild\+Item} schild\+\_\+neu)
+\begin{DoxyCompactList}\small\item\em Neues Schild-\/\+Item für dieses \hyperlink{class_raumschiff}{Raumschiff}, z.\+B. wenn der Spieler eins aus seinem \hyperlink{class_inventar}{Inventar} in den Schild-\/\+Item-\/\+Slot zieht \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a627ae269cfe0db00d361c9e4a8ce2413}{set\+\_\+layer} (int n\+\_\+layer)
+\begin{DoxyCompactList}\small\item\em Setzt für das Object selbst und das Collision Object das Layer fest \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a0e562e25b6f8186c569fbc0577ef3bb6}{apply\+\_\+statuseffect} (\hyperlink{class_status_effect}{Status\+Effect} ef)
+\begin{DoxyCompactList}\small\item\em Fügt einen neuen \hyperlink{class_status_effect}{Status\+Effect} zu dem \hyperlink{class_raumschiff}{Raumschiff} hinzu \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a4170fcea7d1c1cb131e634a28ad3b271}{apply\+\_\+statuseffects} (\hyperlink{class_status_effect}{Status\+Effect}\mbox{[}$\,$\mbox{]} effects)
+\begin{DoxyCompactList}\small\item\em Fügt mehrere Status\+Effects hinzu \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_acc4b097a3bfdc0cbefe00246dbbcb534}{remove\+\_\+statuseffect} (\hyperlink{class_status_effect}{Status\+Effect} ef)
+\begin{DoxyCompactList}\small\item\em Entfernt einen speziellen \hyperlink{class_status_effect}{Status\+Effect} \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_aa022b21fc3d102181d347b1bc1e81cba}{remove\+\_\+statuseffects} (\hyperlink{class_status_effect}{Status\+Effect}\mbox{[}$\,$\mbox{]} effects)
+\begin{DoxyCompactList}\small\item\em Entfernt mehrere Status\+Effects \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_accc7fe7a6f5df4f43fa8b3ab7469c3c7}{rotation\+\_\+input} (Movement\+Input\+Keys key)
+\begin{DoxyCompactList}\small\item\em Führt einen gegebenen Rotation-\/\+Input aus \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a5c0e06422ea1860e18dce8171a585676}{speed\+\_\+input} (Movement\+Input\+Keys key)
+\begin{DoxyCompactList}\small\item\em Führt einen gegebenen Speed-\/\+Input aus \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_afd788bbc8497cb88acb1c4633a3b1bb3}{fix\+\_\+rotation} ()
+\begin{DoxyCompactList}\small\item\em Nur für einige \hyperlink{class_computer_player}{Computer\+Player} Da das \hyperlink{class_raumschiff}{Raumschiff} sich in lokalen-\/\+Achse maximal um einen bestimmten Winkel drehen darf und in der lokalen z-\/\+Achse gar nicht, wird hier daher die Rotation angepasst \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_ae5251fec3b08bf9b4e34e2e854e27e9f}{fix\+\_\+z\+\_\+rotation} ()
+\begin{DoxyCompactList}\small\item\em Passt die lokale z-\/\+Rotation an \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_af4e61eb0614f6933afff28f8f12bbdb9}{fix\+\_\+x\+\_\+rotation} ()
+\begin{DoxyCompactList}\small\item\em Passt die lokale-\/x-\/\+Rotation an \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a0b021ca84c90939591bb5068542c1dde}{rotate\+\_\+left} ()
+\begin{DoxyCompactList}\small\item\em Dreht das \hyperlink{class_raumschiff}{Raumschiff} nach links \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_adaa371fa37ba5b564b15a35b3ff94437}{rotate\+\_\+right} ()
+\begin{DoxyCompactList}\small\item\em Dreht das \hyperlink{class_raumschiff}{Raumschiff} nach rechts \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a1f8779409140a15e00f3cb4b5c7bec14}{rotate\+\_\+down} ()
+\item 
+void \hyperlink{class_spaceship_a311d6c40b0c54f11a2da4624a5e2487c}{rotate\+\_\+up} ()
+\begin{DoxyCompactList}\small\item\em Dreht das \hyperlink{class_raumschiff}{Raumschiff} nach oben \end{DoxyCompactList}\item 
+List$<$ \hyperlink{class_weapon}{Weapon} $>$ \hyperlink{class_spaceship_aa55156010da7dba1748429efda244d04}{get\+\_\+possible\+\_\+weapons} (Game\+Object enemy)
+\begin{DoxyCompactList}\small\item\em Erstellt eine Liste alle Waffen auf dem \hyperlink{class_raumschiff}{Raumschiff}, die theoretisch vom Winkel her gesehen auf den Gegner schießen könnten und gibt diese zurück \end{DoxyCompactList}\item 
+\hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} \hyperlink{class_spaceship_abe7281c6b8a4d3e9294c56e6a1cf8157}{get\+\_\+top\+\_\+weapon\+\_\+position} ()
+\begin{DoxyCompactList}\small\item\em Gibt die \hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} zurück, die vorne ist und in die vordere Richtung zeigt \end{DoxyCompactList}\item 
+\hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} \hyperlink{class_spaceship_a35fbba50c658617e939fd2d82bf33fbf}{get\+\_\+bot\+\_\+weapon\+\_\+position} ()
+\begin{DoxyCompactList}\small\item\em Gibt die \hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} zurück, die hinten ist und in die hintere Richtung zeigt \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a18e0ef162384544259aa3ec4f55ad5f8}{setup\+\_\+shield\+\_\+gos} ()
+\begin{DoxyCompactList}\small\item\em Legt die Viertelkreisobjekte für den Schild-\/\+Anzeiger fest \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a686609169faa9dec55c5da096581beec}{create\+\_\+shield} ()
+\begin{DoxyCompactList}\small\item\em Erstellt eine neue Schild-\/\+Instanz für dieses \hyperlink{class_raumschiff}{Raumschiff} \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a4a932f067ed922c34f82fa4479dbdf4d}{warp\+\_\+in} ()
+\begin{DoxyCompactList}\small\item\em Lässt das \hyperlink{class_raumschiff}{Raumschiff} reinwarpen \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a2e51bf3ac0ada83d93bb8a474994a210}{clamp\+\_\+speed} ()
+\begin{DoxyCompactList}\small\item\em Grenzt den speed-\/\+Wert ein \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a311d0678e160eb4115fcc756f4ca1bfb}{auto\+\_\+navigate\+\_\+to\+\_\+object} (Game\+Object point)
+\begin{DoxyCompactList}\small\item\em Auto-\/\+Pilot zu einem Game\+Object \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a9e01091d877ec35797334f53e1a6faa6}{auto\+\_\+navigate\+\_\+to\+\_\+object} (Game\+Object point, float target\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Auto-\/\+Pilot zu einem Game\+Object mit neuer target\+\_\+speed \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a43e9cd085c3e2cdec0122b6f4b3c6456}{auto\+\_\+navigate\+\_\+to\+\_\+point} (Vector3 point)
+\begin{DoxyCompactList}\small\item\em Auto-\/\+Pilot zu einem Punkt \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a888beaebbb837300c645eb0bc3e979e0}{abort\+\_\+auto\+\_\+navigation} ()
+\begin{DoxyCompactList}\small\item\em Bricht den Auto-\/\+Piloten ab \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_ab0ef968d5442e5d536bcc0d887beacc6}{set\+\_\+target\+\_\+speed} (float s)
+\begin{DoxyCompactList}\small\item\em Setzt eine Zielgeschwindigkeit für das \hyperlink{class_raumschiff}{Raumschiff} \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a0eaf7f4995770c01eafeabe3a43c2af3}{set\+\_\+shieldpart\+\_\+color} (Game\+Object shield, Color color)
+\begin{DoxyCompactList}\small\item\em Legt die Farbe für ein Viertelkreis-\/\+Schildobject fest \end{DoxyCompactList}\item 
+Color \hyperlink{class_spaceship_a78e68df6007c48431f1bddf304226948}{get\+\_\+shield\+\_\+color} (float p)
+\begin{DoxyCompactList}\small\item\em Berechnet die Schildfarbe für die prozentuale Schildstärke p \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_ade12946ccbbfffb92a864b710dc2217d}{set\+\_\+shield\+\_\+indicator\+\_\+color} ()
+\begin{DoxyCompactList}\small\item\em Legt die Farben für die Schild-\/\+Viertelkreise fest \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a06f201982238a71b99c5f065d48c3acc}{cloak} ()
+\begin{DoxyCompactList}\small\item\em Tarnt das \hyperlink{class_raumschiff}{Raumschiff} \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a46d165fefc78bd0cd729429b59a6bbb6}{decloak} ()
+\begin{DoxyCompactList}\small\item\em Enttarnt das \hyperlink{class_raumschiff}{Raumschiff} \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_aec76ac225db6e42b52afb3aac04f7cad}{apply\+\_\+damage} (float dmg\+\_\+to\+\_\+shield, Schild\+Part\+Types schildpart, float dmg\+\_\+to\+\_\+si)
+\begin{DoxyCompactList}\small\item\em Richtet Schaden am \hyperlink{class_raumschiff}{Raumschiff} an \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a3f59582cf969851ab6633b4cf1047f20}{check\+\_\+destroyed} ()
+\begin{DoxyCompactList}\small\item\em Prüft, ob das \hyperlink{class_raumschiff}{Raumschiff} zerstört werden soll und tut dies ggf. \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a720b65b98cede503822fcb0141873f97}{destroy} ()
+\begin{DoxyCompactList}\small\item\em Zerstört das \hyperlink{class_raumschiff}{Raumschiff} \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a8cfcff835d6cba6b9fb8aa6841aa0cba}{get\+\_\+angle} (Vector3 global\+\_\+pos)
+\begin{DoxyCompactList}\small\item\em Gibt den Winkel der der Punkt global\+\_\+pos auf der Raumschiff-\/\+Ebene mit dem Vorwärtsvektor bildet 0° bedeutet z.\+B. Vorne \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_abe51aab2bda242c27d475e50685bda63}{attack\+\_\+enemy} (Game\+Object enemy, int layer, Weapon\+Raw\+Types weapon\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Greift den Gegner an \end{DoxyCompactList}\item 
+void \hyperlink{class_spaceship_a4bce8027749e4c12088266071ba6a5cc}{attack\+\_\+enemy} (Game\+Object enemy, int layer, Weapon\+Raw\+Types weapon\+\_\+type, bool recursive)
+\begin{DoxyCompactList}\small\item\em Greift den Gegner an \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_spaceship}{Spaceship} \hyperlink{class_spaceship_a46ebdafb571812867be422a6beb4ad21}{get\+\_\+spaceship} (Game\+Object o)
+\begin{DoxyCompactList}\small\item\em Findet die Spaceship-\/\+Instanz, die auf dem Game\+Object oder in einem seiner Parents ist, oder null, wenn diese nicht existiert \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spaceship_a57fc32dd2636651fef55762f24c8bbcf}\label{class_spaceship_a57fc32dd2636651fef55762f24c8bbcf}} 
+static List$<$ \hyperlink{class_spaceship}{Spaceship} $>$ {\bfseries get\+\_\+active\+\_\+enemy\+\_\+spaceships} ()
+\item 
+\mbox{\Hypertarget{class_spaceship_aaffca9101612342b71a4b9b237c2df69}\label{class_spaceship_aaffca9101612342b71a4b9b237c2df69}} 
+static List$<$ \hyperlink{class_spaceship}{Spaceship} $>$ {\bfseries get\+\_\+active\+\_\+player\+\_\+spaceships} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_raumschiff}{Raumschiff} \hyperlink{class_spaceship_a771d4dcd411d0d08d1c2a67fd6b5f5c1}{raumschiff}
+\begin{DoxyCompactList}\small\item\em Ein Scriptable\+Object mit den nötigen Informationen zu diesem \hyperlink{class_spaceship}{Spaceship} \end{DoxyCompactList}\item 
+const float \hyperlink{class_spaceship_a862815bd4b04d532e2894ced48d2acc6}{min\+\_\+out\+\_\+of\+\_\+combat\+\_\+time} = 5
+\begin{DoxyCompactList}\small\item\em die Zeit, in der man nicht im Kampf sein darf, um den \char`\"{}out-\/of-\/combat\char`\"{} status zu erhalten \end{DoxyCompactList}\item 
+const float \hyperlink{class_spaceship_a44d9e635e6d659a4de6808bb36770ea5}{max\+\_\+x\+\_\+rotation} = 65
+\begin{DoxyCompactList}\small\item\em Gibt den maximalen Drehwinkel an, den ein nicht-\/\+Spieler-\/\+Raumschiff in der lokalen x-\/\+Achse haben kann \end{DoxyCompactList}\item 
+Object\+Group\+Type \hyperlink{class_spaceship_a3b6cdeee7ecba55cf3807661e8662bea}{spaceship\+\_\+group\+\_\+type} = Object\+Group\+Type.\+None
+\begin{DoxyCompactList}\small\item\em Die Gruppe, in der diese Spaceship-\/\+Instanz drin ist (Spieler/\+Gegner) \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_acdd2d51050e8368133ae24362d7b2ddf}{spaceship\+\_\+stats\+\_\+depend\+\_\+on\+\_\+items} = true
+\begin{DoxyCompactList}\small\item\em Gibt an, ob die \hyperlink{class_spaceship}{Spaceship} stats (Geschwindigkeit etc.) von den Items abhängen und nicht von den Werten, die im Inspector zugeordnet wurden. ( Wurde früher für Test-\/\+Zwecke benutzt, jetzt aber nicht mehr. \end{DoxyCompactList}\item 
+\hyperlink{class_schild}{Schild} \hyperlink{class_spaceship_a45e154e6dacd6da7c800c94a05dd27b0}{schild}
+\begin{DoxyCompactList}\small\item\em Eine Schild-\/\+Instanz, die die Informationen bezüglich Schildstärke etc. beinhaltet. \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_spaceship_acef63fb7a63f7ee3cd351ecbbaaf4347}{warp\+\_\+in\+\_\+startpoint}
+\begin{DoxyCompactList}\small\item\em Wenn das \hyperlink{class_raumschiff}{Raumschiff} am Anfang in die Szene reinwarpen sollte, gibt dieses Game\+Object die Position des Punktes an, an dem der Warpflug beginnt \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_spaceship_afe502a70397991dae3950bc9f96d9278}{warpspur}
+\begin{DoxyCompactList}\small\item\em G\+FX hinter dem \hyperlink{class_raumschiff}{Raumschiff} bei Warp (wird nicht mehr benutzt) \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_spaceship_a904d291eba352540e2531359789a182f}{auspuff}
+\begin{DoxyCompactList}\small\item\em G\+FX für die Impulsantriebspur \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_ae434c25796c8b4522fcb41e3abda56d9}{destroyed\+\_\+deform\+\_\+factor} = 1
+\begin{DoxyCompactList}\small\item\em Bestimmt, wie stark das \hyperlink{class_spaceship}{Spaceship} bei Zerstörung verformt wird \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_a5d9e0a694b1e357eef2f13755e8d2db1}{destroyed} = false
+\begin{DoxyCompactList}\small\item\em Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} zerstört ist. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{class_status_effect}{Status\+Effect} $>$ \hyperlink{class_spaceship_a54d20dc0f35e14abec24c50e060353b8}{status\+\_\+effects}
+\begin{DoxyCompactList}\small\item\em Die Status-\/\+Effekte, die auf dem Schiff sind. (Buffs/\+Debuffs) \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_a6a17ebe141b503299caf808301bf60aa}{immortal} = false
+\begin{DoxyCompactList}\small\item\em Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} zerstörbar ist. (Nur für Testzwecke) \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a2ecf9e8c9ba5fbc7b53f731b8c364e20}{max\+\_\+structural\+\_\+integrity} = 100
+\begin{DoxyCompactList}\small\item\em Die maximale Hüllenstärke \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a7ac37ce79a081b8bc4cdedf741be9043}{structural\+\_\+integrity} = 0
+\begin{DoxyCompactList}\small\item\em Die aktuelle Hüllenstärke \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a96369ccf86f31837d7d7ae63636e780f}{max\+\_\+total\+\_\+shields} = 0
+\begin{DoxyCompactList}\small\item\em Maximale Schildstärke \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_ab3545f7f8a0bc4e106c58ee829a8c195}{minimap\+\_\+icon\+\_\+created} = false
+\begin{DoxyCompactList}\small\item\em Gibt an, ob für dieses \hyperlink{class_spaceship}{Spaceship} schon ein Icon auf der \hyperlink{class_minimap}{Minimap} erstellt wurde \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a66af2928c7df3d1050d5a730a179b922}{speed}
+\begin{DoxyCompactList}\small\item\em Eingestellte Geschwindigkeit des Raumschiffs, z.\+B durch den Spieler-\/\+Input (E/Q), zwischen -\/1 und 4 \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a28d8649c7000f2f6626f88663b4248be}{accel}
+\begin{DoxyCompactList}\small\item\em Gibt an, wie stark das \hyperlink{class_raumschiff}{Raumschiff} beschleunigen kann \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a8c2becac0f8d20fcb380a1e79b196131}{base\+\_\+rotation\+\_\+speed}
+\begin{DoxyCompactList}\small\item\em Basis Drehgeschwindigkeit \end{DoxyCompactList}\item 
+const float \hyperlink{class_spaceship_a1322e387e2296dbc3b47323f095d98fa}{rotation\+\_\+z\+\_\+axis\+\_\+tilt\+\_\+amount} = 20
+\begin{DoxyCompactList}\small\item\em Gibt an, wie stark sich das \hyperlink{class_raumschiff}{Raumschiff} bei Links/\+Rechts-\/\+Drehung um die lokale z-\/\+Achse (vorwärts-\/\+Achse) dreht \end{DoxyCompactList}\item 
+List$<$ \hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} $>$ \hyperlink{class_spaceship_a3da1d2ff9be863bb80ea7fa2a6c3db06}{spaceship\+Weapon\+Positions}
+\begin{DoxyCompactList}\small\item\em Die Waffenpositionen des Raumschiffs, also die Orte, von denen \hyperlink{class_phaser}{Phaser}, Torpedos etc. abgefeuert werden können \end{DoxyCompactList}\item 
+\hyperlink{class_impuls_antrieb}{Impuls\+Antrieb} \hyperlink{class_spaceship_a2f4055a6f9d52ba2ec599e86280f5325}{impuls\+\_\+antrieb}
+\begin{DoxyCompactList}\small\item\em Das Impuls-\/\+Antriebs-\/\+Item, das dem Schiff zugewiesen ist \end{DoxyCompactList}\item 
+\hyperlink{class_warp_antrieb}{Warp\+Antrieb} \hyperlink{class_spaceship_a79ee5cdccdede956de6eae9a1619ccbc}{warp\+\_\+antrieb}
+\begin{DoxyCompactList}\small\item\em Das Warp-\/\+Antriebs-\/\+Item, das dem Schiff zugewiesen ist \end{DoxyCompactList}\item 
+Antrieb\+Type \hyperlink{class_spaceship_ad33632d0f3e88bdeae6f711044e53a4e}{antrieb\+\_\+type} = Antrieb\+Type.\+Impuls
+\begin{DoxyCompactList}\small\item\em Der Antrieb, der zurzeit benutzt wird (Warp/\+Impuls) \end{DoxyCompactList}\item 
+List$<$ \hyperlink{class_spaceship_module}{Spaceship\+Module} $>$ \hyperlink{class_spaceship_aad3c0baa850f85ef7432c0ea6f0e003e}{modules} = new List$<$\hyperlink{class_spaceship_module}{Spaceship\+Module}$>$()
+\begin{DoxyCompactList}\small\item\em Die Raumschiffe-\/\+Module, mit denen dieses \hyperlink{class_raumschiff}{Raumschiff} ausgestattet ist \end{DoxyCompactList}\item 
+const float \hyperlink{class_spaceship_a7a1ae8f60dc0535577c90ac06e5c86cd}{cloak\+\_\+effect\+\_\+alpha} = 0.\+4f
+\begin{DoxyCompactList}\small\item\em Durchsichtigkeit des Raumschiffs bei Tarnung \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_a012d6f0509e4e4c6afbeaa81b80c4b23}{is\+\_\+cloaking} = false
+\begin{DoxyCompactList}\small\item\em Gibt an, ob sich das \hyperlink{class_raumschiff}{Raumschiff} gerade tarnt \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_spaceship_a40f7992de603fb76e22c3dcce1b63292}{schild\+\_\+collision\+\_\+object}
+\begin{DoxyCompactList}\small\item\em Das Game\+Object, das für die Schild-\/\+Schild-\/\+Graphik und die Collision zuständig ist \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_spaceship_aa88ea0cfef593a18db011de1ca41c335}{gfx\+\_\+parent}
+\begin{DoxyCompactList}\small\item\em Das Game\+Object, das die G\+FX beinhaltet (häufig das Object selbst) \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_spaceship_a128777395236ab7a2ef22f1f44ef903b}{shields}
+\begin{DoxyCompactList}\small\item\em Die vier Game\+Objects der Viertelkreise, die die jeweilige Schildstärke angeben \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_afe9aabc5e72224e51baf21791e026bd0}{has\+\_\+shield\+\_\+indicator} = true
+\begin{DoxyCompactList}\small\item\em Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} Schild-\/\+Anzeiger hat (die vier Viertelkreise) \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_a17928c1e3b04001aaf33e9083731c647}{warping\+\_\+in} = false
+\begin{DoxyCompactList}\small\item\em Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} gerade am Reinwarpen ist \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_spaceship_a55f3116d23628f01925dd1b7f4a053e9}{start\+\_\+pos}
+\begin{DoxyCompactList}\small\item\em Startposition vor dem Reinwarpen, also Ziel des Warps \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_spaceship_a1cb2c76d5ed1db05cba652b7a9cd71ca}{warpin\+\_\+start\+\_\+pos}
+\begin{DoxyCompactList}\small\item\em Startposition des Reinwarpens \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_a6088ab385c31a4133eb7418bc79dd31b}{is\+\_\+auto\+\_\+navigating}
+\begin{DoxyCompactList}\small\item\em Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} gerade den Auto-\/\+Pilot an hat \end{DoxyCompactList}\item 
+Game\+Object \hyperlink{class_spaceship_ad7b81478ac9e68d3b28d84ccda1b0e5f}{auto\+\_\+navigation\+\_\+target\+\_\+object}
+\begin{DoxyCompactList}\small\item\em Zielobjekt des Auto-\/\+Piloten \end{DoxyCompactList}\item 
+const float \hyperlink{class_spaceship_a14d21edf96d6a77e14d975b506275e7e}{auto\+\_\+navigation\+\_\+target\+\_\+distance} = 60
+\begin{DoxyCompactList}\small\item\em Gibt an, wie nah das \hyperlink{class_raumschiff}{Raumschiff} am Ziel dran sein muss, um den Auto-\/\+Piloten abzuschalten \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a6190772ff13072113beda25fcc6469ce}{auto\+\_\+navigation\+\_\+target\+\_\+speed} = 4
+\begin{DoxyCompactList}\small\item\em Normale Reisegeschwindigkeit des Auto-\/\+Piloten \end{DoxyCompactList}\item 
+Vector3 \hyperlink{class_spaceship_ac19d442ae4d44180f76a3875ec0a496b}{auto\+\_\+navigation\+\_\+bug\+\_\+180\+\_\+correction\+\_\+axis} = new Vector3 (0, 1, 0)
+\begin{DoxyCompactList}\small\item\em Sollte das \hyperlink{class_raumschiff}{Raumschiff} in die entgegengesetzte Richtung fliegen, muss eine neue Achse für die Rotation hinzugefügt werden. Aufgrund der Behebung eines anderen Fehlers tritt dies nun aber nicht mehr ein. (Genaugenommen ist dies kein Bug, sondern nur eine logische Konzequenz des Kreuzproduktes. Da dies aber zuerst wie ein Bug aussah, heißt es immer noch Bug) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \hyperlink{class_spaceship}{Spaceship} $>$ \hyperlink{class_spaceship_a5958b60df7a824952944bfa3c201676f}{active\+\_\+spaceships} = new List$<$\hyperlink{class_spaceship}{Spaceship}$>$ ()
+\begin{DoxyCompactList}\small\item\em Alle aktiven Spaceship-\/\+Instanzen in der Scene, die nicht destroyed sind \end{DoxyCompactList}\item 
+static float \hyperlink{class_spaceship_a1e950732e18a6aa13fbbc4b24bce7fe6}{max\+\_\+attack\+\_\+distance} = 2000
+\begin{DoxyCompactList}\small\item\em Maximale Angriffsdistanz der Raumschiffe \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_spaceship_ae00fee3dd4ed5e2dc8c8c5f96505a5a3}\label{class_spaceship_ae00fee3dd4ed5e2dc8c8c5f96505a5a3}} 
+\hyperlink{class_schild_item}{Schild\+Item} {\bfseries schild\+\_\+item}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \hyperlink{class_item}{Item} $>$ \hyperlink{class_spaceship_a89158e2a2dc71a98acb3c3755962c144}{equipped\+\_\+items}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt eine Liste aller Items zurück, die zurzeit auf dem \hyperlink{class_raumschiff}{Raumschiff} sind \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a9dfc7adf86ae18216d0244326e7a6ebf}{max\+\_\+speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt die maximal erreichbare Geschwindigkeit zurück. Diese ist abhängig von der Basis-\/\+Geschwindigkeit, die durch das Impuls-\/\+Antrieb-\/\+Item festgelegt ist, und den Statuseffekten (Buffs/\+Debuffs), die auf dem \hyperlink{class_raumschiff}{Raumschiff} sind \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a9dede788e870c34a09db8d22e9ac61f6}{rotation\+\_\+speed}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt die maximal erreichbare Drehgeschwindigkeit zurück. Diese ist abhängig von der Basis-\/\+Dreheschwindigkeit und den Statuseffekten (Buffs/\+Debuffs), die auf dem \hyperlink{class_raumschiff}{Raumschiff} sind \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_ad98db7a91256b60c912c508cff2f001d}{damage\+\_\+output}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt einen Schadens-\/\+Multiplier zurück Dieser ist abhängig von den Statuseffekten (Buffs/\+Debuffs), die auf dem \hyperlink{class_raumschiff}{Raumschiff} sind \end{DoxyCompactList}\item 
+float \hyperlink{class_spaceship_a1daf5f7456d1b35b59eb6580b4ad5b9e}{shield\+\_\+modifier}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt einen Schild-\/\+Multiplier zurück Dieser ist abhängig von den Statuseffekten (Buffs/\+Debuffs), die auf dem \hyperlink{class_raumschiff}{Raumschiff} sind \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_a459b3d62a7e0a7e76b7a019de5b386e1}{can\+\_\+attack}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Prüft, ob dieses \hyperlink{class_spaceship}{Spaceship} angreifen kann. \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_ae627cd6b28077cea3ca7d50e1c3eea8d}{ship\+\_\+under\+\_\+attack}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt an, ob das \hyperlink{class_spaceship}{Spaceship} unter Beschuss ist \end{DoxyCompactList}\item 
+bool \hyperlink{class_spaceship_a008e4fcc8af1c4ebbaee64603593d6d1}{in\+\_\+battle}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gibt an, ob das \hyperlink{class_spaceship}{Spaceship} im Kampf ist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_spaceship_a888beaebbb837300c645eb0bc3e979e0}\label{class_spaceship_a888beaebbb837300c645eb0bc3e979e0}} 
+\index{Spaceship@{Spaceship}!abort\+\_\+auto\+\_\+navigation@{abort\+\_\+auto\+\_\+navigation}}
+\index{abort\+\_\+auto\+\_\+navigation@{abort\+\_\+auto\+\_\+navigation}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{abort\+\_\+auto\+\_\+navigation()}{abort\_auto\_navigation()}}
+{\footnotesize\ttfamily void Spaceship.\+abort\+\_\+auto\+\_\+navigation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bricht den Auto-\/\+Piloten ab 
+
+\mbox{\Hypertarget{class_spaceship_aec76ac225db6e42b52afb3aac04f7cad}\label{class_spaceship_aec76ac225db6e42b52afb3aac04f7cad}} 
+\index{Spaceship@{Spaceship}!apply\+\_\+damage@{apply\+\_\+damage}}
+\index{apply\+\_\+damage@{apply\+\_\+damage}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{apply\+\_\+damage()}{apply\_damage()}}
+{\footnotesize\ttfamily void Spaceship.\+apply\+\_\+damage (\begin{DoxyParamCaption}\item[{float}]{dmg\+\_\+to\+\_\+shield,  }\item[{Schild\+Part\+Types}]{schildpart,  }\item[{float}]{dmg\+\_\+to\+\_\+si }\end{DoxyParamCaption})}
+
+
+
+Richtet Schaden am \hyperlink{class_raumschiff}{Raumschiff} an 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dmg\+\_\+to\+\_\+shield} & Der Schaden, der dem \hyperlink{class_schild}{Schild} hinzugefügt wird.\\
+\hline
+{\em schildpart} & Der zu beschädigende Schildpart.\\
+\hline
+{\em dmg\+\_\+to\+\_\+si} & Der Schaden, der der Hülle hinzugefügt wird.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a465e9ba15923826055b2fd43be83d635}\label{class_spaceship_a465e9ba15923826055b2fd43be83d635}} 
+\index{Spaceship@{Spaceship}!apply\+\_\+item\+\_\+stats@{apply\+\_\+item\+\_\+stats}}
+\index{apply\+\_\+item\+\_\+stats@{apply\+\_\+item\+\_\+stats}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{apply\+\_\+item\+\_\+stats()}{apply\_item\_stats()}}
+{\footnotesize\ttfamily void Spaceship.\+apply\+\_\+item\+\_\+stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Setzt die Schild-\/ und Geschwindigkeitswerte den Items entsprechend fest 
+
+\mbox{\Hypertarget{class_spaceship_a0e562e25b6f8186c569fbc0577ef3bb6}\label{class_spaceship_a0e562e25b6f8186c569fbc0577ef3bb6}} 
+\index{Spaceship@{Spaceship}!apply\+\_\+statuseffect@{apply\+\_\+statuseffect}}
+\index{apply\+\_\+statuseffect@{apply\+\_\+statuseffect}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{apply\+\_\+statuseffect()}{apply\_statuseffect()}}
+{\footnotesize\ttfamily void Spaceship.\+apply\+\_\+statuseffect (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_effect}{Status\+Effect}}]{ef }\end{DoxyParamCaption})}
+
+
+
+Fügt einen neuen \hyperlink{class_status_effect}{Status\+Effect} zu dem \hyperlink{class_raumschiff}{Raumschiff} hinzu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ef} & Der \hyperlink{class_status_effect}{Status\+Effect}.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a4170fcea7d1c1cb131e634a28ad3b271}\label{class_spaceship_a4170fcea7d1c1cb131e634a28ad3b271}} 
+\index{Spaceship@{Spaceship}!apply\+\_\+statuseffects@{apply\+\_\+statuseffects}}
+\index{apply\+\_\+statuseffects@{apply\+\_\+statuseffects}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{apply\+\_\+statuseffects()}{apply\_statuseffects()}}
+{\footnotesize\ttfamily void Spaceship.\+apply\+\_\+statuseffects (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_effect}{Status\+Effect} \mbox{[}$\,$\mbox{]}}]{effects }\end{DoxyParamCaption})}
+
+
+
+Fügt mehrere Status\+Effects hinzu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em effects} & Die Status\+Effects.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_abe51aab2bda242c27d475e50685bda63}\label{class_spaceship_abe51aab2bda242c27d475e50685bda63}} 
+\index{Spaceship@{Spaceship}!attack\+\_\+enemy@{attack\+\_\+enemy}}
+\index{attack\+\_\+enemy@{attack\+\_\+enemy}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{attack\+\_\+enemy()}{attack\_enemy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Spaceship.\+attack\+\_\+enemy (\begin{DoxyParamCaption}\item[{Game\+Object}]{enemy,  }\item[{int}]{layer,  }\item[{Weapon\+Raw\+Types}]{weapon\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Greift den Gegner an 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Enemy.\\
+\hline
+{\em layer} & Layer.\\
+\hline
+{\em weapon\+\_\+type} & \hyperlink{class_weapon}{Weapon} type.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a4bce8027749e4c12088266071ba6a5cc}\label{class_spaceship_a4bce8027749e4c12088266071ba6a5cc}} 
+\index{Spaceship@{Spaceship}!attack\+\_\+enemy@{attack\+\_\+enemy}}
+\index{attack\+\_\+enemy@{attack\+\_\+enemy}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{attack\+\_\+enemy()}{attack\_enemy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Spaceship.\+attack\+\_\+enemy (\begin{DoxyParamCaption}\item[{Game\+Object}]{enemy,  }\item[{int}]{layer,  }\item[{Weapon\+Raw\+Types}]{weapon\+\_\+type,  }\item[{bool}]{recursive }\end{DoxyParamCaption})}
+
+
+
+Greift den Gegner an 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Enemy.\\
+\hline
+{\em layer} & Layer.\\
+\hline
+{\em weapon\+\_\+type} & \hyperlink{class_weapon}{Weapon} type.\\
+\hline
+{\em recursive} & Gibt an, ob die selbe Waffe auf ein anderes Schiff feuern kann, wennn das ausgewählte Schiff nicht durch diese Waffe angegriffen werden kann. (Zurzeit nicht aktiv)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a311d0678e160eb4115fcc756f4ca1bfb}\label{class_spaceship_a311d0678e160eb4115fcc756f4ca1bfb}} 
+\index{Spaceship@{Spaceship}!auto\+\_\+navigate\+\_\+to\+\_\+object@{auto\+\_\+navigate\+\_\+to\+\_\+object}}
+\index{auto\+\_\+navigate\+\_\+to\+\_\+object@{auto\+\_\+navigate\+\_\+to\+\_\+object}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{auto\+\_\+navigate\+\_\+to\+\_\+object()}{auto\_navigate\_to\_object()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Spaceship.\+auto\+\_\+navigate\+\_\+to\+\_\+object (\begin{DoxyParamCaption}\item[{Game\+Object}]{point }\end{DoxyParamCaption})}
+
+
+
+Auto-\/\+Pilot zu einem Game\+Object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Zielobjekt.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a9e01091d877ec35797334f53e1a6faa6}\label{class_spaceship_a9e01091d877ec35797334f53e1a6faa6}} 
+\index{Spaceship@{Spaceship}!auto\+\_\+navigate\+\_\+to\+\_\+object@{auto\+\_\+navigate\+\_\+to\+\_\+object}}
+\index{auto\+\_\+navigate\+\_\+to\+\_\+object@{auto\+\_\+navigate\+\_\+to\+\_\+object}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{auto\+\_\+navigate\+\_\+to\+\_\+object()}{auto\_navigate\_to\_object()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Spaceship.\+auto\+\_\+navigate\+\_\+to\+\_\+object (\begin{DoxyParamCaption}\item[{Game\+Object}]{point,  }\item[{float}]{target\+\_\+speed }\end{DoxyParamCaption})}
+
+
+
+Auto-\/\+Pilot zu einem Game\+Object mit neuer target\+\_\+speed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Zielobjekt.\\
+\hline
+{\em target\+\_\+speed} & Target speed.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a43e9cd085c3e2cdec0122b6f4b3c6456}\label{class_spaceship_a43e9cd085c3e2cdec0122b6f4b3c6456}} 
+\index{Spaceship@{Spaceship}!auto\+\_\+navigate\+\_\+to\+\_\+point@{auto\+\_\+navigate\+\_\+to\+\_\+point}}
+\index{auto\+\_\+navigate\+\_\+to\+\_\+point@{auto\+\_\+navigate\+\_\+to\+\_\+point}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{auto\+\_\+navigate\+\_\+to\+\_\+point()}{auto\_navigate\_to\_point()}}
+{\footnotesize\ttfamily void Spaceship.\+auto\+\_\+navigate\+\_\+to\+\_\+point (\begin{DoxyParamCaption}\item[{Vector3}]{point }\end{DoxyParamCaption})}
+
+
+
+Auto-\/\+Pilot zu einem Punkt 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Point.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a3f59582cf969851ab6633b4cf1047f20}\label{class_spaceship_a3f59582cf969851ab6633b4cf1047f20}} 
+\index{Spaceship@{Spaceship}!check\+\_\+destroyed@{check\+\_\+destroyed}}
+\index{check\+\_\+destroyed@{check\+\_\+destroyed}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{check\+\_\+destroyed()}{check\_destroyed()}}
+{\footnotesize\ttfamily void Spaceship.\+check\+\_\+destroyed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prüft, ob das \hyperlink{class_raumschiff}{Raumschiff} zerstört werden soll und tut dies ggf. 
+
+\mbox{\Hypertarget{class_spaceship_a2e51bf3ac0ada83d93bb8a474994a210}\label{class_spaceship_a2e51bf3ac0ada83d93bb8a474994a210}} 
+\index{Spaceship@{Spaceship}!clamp\+\_\+speed@{clamp\+\_\+speed}}
+\index{clamp\+\_\+speed@{clamp\+\_\+speed}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{clamp\+\_\+speed()}{clamp\_speed()}}
+{\footnotesize\ttfamily void Spaceship.\+clamp\+\_\+speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Grenzt den speed-\/\+Wert ein 
+
+\mbox{\Hypertarget{class_spaceship_a06f201982238a71b99c5f065d48c3acc}\label{class_spaceship_a06f201982238a71b99c5f065d48c3acc}} 
+\index{Spaceship@{Spaceship}!cloak@{cloak}}
+\index{cloak@{cloak}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{cloak()}{cloak()}}
+{\footnotesize\ttfamily void Spaceship.\+cloak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tarnt das \hyperlink{class_raumschiff}{Raumschiff} 
+
+\mbox{\Hypertarget{class_spaceship_a686609169faa9dec55c5da096581beec}\label{class_spaceship_a686609169faa9dec55c5da096581beec}} 
+\index{Spaceship@{Spaceship}!create\+\_\+shield@{create\+\_\+shield}}
+\index{create\+\_\+shield@{create\+\_\+shield}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{create\+\_\+shield()}{create\_shield()}}
+{\footnotesize\ttfamily void Spaceship.\+create\+\_\+shield (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Erstellt eine neue Schild-\/\+Instanz für dieses \hyperlink{class_raumschiff}{Raumschiff} 
+
+\mbox{\Hypertarget{class_spaceship_a46d165fefc78bd0cd729429b59a6bbb6}\label{class_spaceship_a46d165fefc78bd0cd729429b59a6bbb6}} 
+\index{Spaceship@{Spaceship}!decloak@{decloak}}
+\index{decloak@{decloak}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{decloak()}{decloak()}}
+{\footnotesize\ttfamily void Spaceship.\+decloak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enttarnt das \hyperlink{class_raumschiff}{Raumschiff} 
+
+\mbox{\Hypertarget{class_spaceship_a720b65b98cede503822fcb0141873f97}\label{class_spaceship_a720b65b98cede503822fcb0141873f97}} 
+\index{Spaceship@{Spaceship}!destroy@{destroy}}
+\index{destroy@{destroy}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Spaceship.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zerstört das \hyperlink{class_raumschiff}{Raumschiff} 
+
+\mbox{\Hypertarget{class_spaceship_afd788bbc8497cb88acb1c4633a3b1bb3}\label{class_spaceship_afd788bbc8497cb88acb1c4633a3b1bb3}} 
+\index{Spaceship@{Spaceship}!fix\+\_\+rotation@{fix\+\_\+rotation}}
+\index{fix\+\_\+rotation@{fix\+\_\+rotation}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{fix\+\_\+rotation()}{fix\_rotation()}}
+{\footnotesize\ttfamily void Spaceship.\+fix\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Nur für einige \hyperlink{class_computer_player}{Computer\+Player} Da das \hyperlink{class_raumschiff}{Raumschiff} sich in lokalen-\/\+Achse maximal um einen bestimmten Winkel drehen darf und in der lokalen z-\/\+Achse gar nicht, wird hier daher die Rotation angepasst 
+
+\mbox{\Hypertarget{class_spaceship_af4e61eb0614f6933afff28f8f12bbdb9}\label{class_spaceship_af4e61eb0614f6933afff28f8f12bbdb9}} 
+\index{Spaceship@{Spaceship}!fix\+\_\+x\+\_\+rotation@{fix\+\_\+x\+\_\+rotation}}
+\index{fix\+\_\+x\+\_\+rotation@{fix\+\_\+x\+\_\+rotation}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{fix\+\_\+x\+\_\+rotation()}{fix\_x\_rotation()}}
+{\footnotesize\ttfamily void Spaceship.\+fix\+\_\+x\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Passt die lokale-\/x-\/\+Rotation an 
+
+\mbox{\Hypertarget{class_spaceship_ae5251fec3b08bf9b4e34e2e854e27e9f}\label{class_spaceship_ae5251fec3b08bf9b4e34e2e854e27e9f}} 
+\index{Spaceship@{Spaceship}!fix\+\_\+z\+\_\+rotation@{fix\+\_\+z\+\_\+rotation}}
+\index{fix\+\_\+z\+\_\+rotation@{fix\+\_\+z\+\_\+rotation}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{fix\+\_\+z\+\_\+rotation()}{fix\_z\_rotation()}}
+{\footnotesize\ttfamily void Spaceship.\+fix\+\_\+z\+\_\+rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Passt die lokale z-\/\+Rotation an 
+
+\mbox{\Hypertarget{class_spaceship_a8cfcff835d6cba6b9fb8aa6841aa0cba}\label{class_spaceship_a8cfcff835d6cba6b9fb8aa6841aa0cba}} 
+\index{Spaceship@{Spaceship}!get\+\_\+angle@{get\+\_\+angle}}
+\index{get\+\_\+angle@{get\+\_\+angle}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{get\+\_\+angle()}{get\_angle()}}
+{\footnotesize\ttfamily float Spaceship.\+get\+\_\+angle (\begin{DoxyParamCaption}\item[{Vector3}]{global\+\_\+pos }\end{DoxyParamCaption})}
+
+
+
+Gibt den Winkel der der Punkt global\+\_\+pos auf der Raumschiff-\/\+Ebene mit dem Vorwärtsvektor bildet 0° bedeutet z.\+B. Vorne 
+
+\begin{DoxyReturn}{Returns}
+Der Winkel.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em global\+\_\+pos} & Globale Position.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a35fbba50c658617e939fd2d82bf33fbf}\label{class_spaceship_a35fbba50c658617e939fd2d82bf33fbf}} 
+\index{Spaceship@{Spaceship}!get\+\_\+bot\+\_\+weapon\+\_\+position@{get\+\_\+bot\+\_\+weapon\+\_\+position}}
+\index{get\+\_\+bot\+\_\+weapon\+\_\+position@{get\+\_\+bot\+\_\+weapon\+\_\+position}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{get\+\_\+bot\+\_\+weapon\+\_\+position()}{get\_bot\_weapon\_position()}}
+{\footnotesize\ttfamily \hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} Spaceship.\+get\+\_\+bot\+\_\+weapon\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt die \hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} zurück, die hinten ist und in die hintere Richtung zeigt 
+
+\begin{DoxyReturn}{Returns}
+Die hintere \hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spaceship_aa55156010da7dba1748429efda244d04}\label{class_spaceship_aa55156010da7dba1748429efda244d04}} 
+\index{Spaceship@{Spaceship}!get\+\_\+possible\+\_\+weapons@{get\+\_\+possible\+\_\+weapons}}
+\index{get\+\_\+possible\+\_\+weapons@{get\+\_\+possible\+\_\+weapons}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{get\+\_\+possible\+\_\+weapons()}{get\_possible\_weapons()}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_weapon}{Weapon}$>$ Spaceship.\+get\+\_\+possible\+\_\+weapons (\begin{DoxyParamCaption}\item[{Game\+Object}]{enemy }\end{DoxyParamCaption})}
+
+
+
+Erstellt eine Liste alle Waffen auf dem \hyperlink{class_raumschiff}{Raumschiff}, die theoretisch vom Winkel her gesehen auf den Gegner schießen könnten und gibt diese zurück 
+
+\begin{DoxyReturn}{Returns}
+Die möglichen Waffen
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Der Gegner.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a78e68df6007c48431f1bddf304226948}\label{class_spaceship_a78e68df6007c48431f1bddf304226948}} 
+\index{Spaceship@{Spaceship}!get\+\_\+shield\+\_\+color@{get\+\_\+shield\+\_\+color}}
+\index{get\+\_\+shield\+\_\+color@{get\+\_\+shield\+\_\+color}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{get\+\_\+shield\+\_\+color()}{get\_shield\_color()}}
+{\footnotesize\ttfamily Color Spaceship.\+get\+\_\+shield\+\_\+color (\begin{DoxyParamCaption}\item[{float}]{p }\end{DoxyParamCaption})}
+
+
+
+Berechnet die Schildfarbe für die prozentuale Schildstärke p 
+
+\begin{DoxyReturn}{Returns}
+The shield color.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & prozentuale Schildstärke\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a46ebdafb571812867be422a6beb4ad21}\label{class_spaceship_a46ebdafb571812867be422a6beb4ad21}} 
+\index{Spaceship@{Spaceship}!get\+\_\+spaceship@{get\+\_\+spaceship}}
+\index{get\+\_\+spaceship@{get\+\_\+spaceship}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{get\+\_\+spaceship()}{get\_spaceship()}}
+{\footnotesize\ttfamily static \hyperlink{class_spaceship}{Spaceship} Spaceship.\+get\+\_\+spaceship (\begin{DoxyParamCaption}\item[{Game\+Object}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Findet die Spaceship-\/\+Instanz, die auf dem Game\+Object oder in einem seiner Parents ist, oder null, wenn diese nicht existiert 
+
+\begin{DoxyReturn}{Returns}
+Die Spaceship-\/\+Instanz oder null.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & Das Game\+Object, zu dem die Spaceship-\/\+Instanz gesucht werden soll.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_abe7281c6b8a4d3e9294c56e6a1cf8157}\label{class_spaceship_abe7281c6b8a4d3e9294c56e6a1cf8157}} 
+\index{Spaceship@{Spaceship}!get\+\_\+top\+\_\+weapon\+\_\+position@{get\+\_\+top\+\_\+weapon\+\_\+position}}
+\index{get\+\_\+top\+\_\+weapon\+\_\+position@{get\+\_\+top\+\_\+weapon\+\_\+position}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{get\+\_\+top\+\_\+weapon\+\_\+position()}{get\_top\_weapon\_position()}}
+{\footnotesize\ttfamily \hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} Spaceship.\+get\+\_\+top\+\_\+weapon\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt die \hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} zurück, die vorne ist und in die vordere Richtung zeigt 
+
+\begin{DoxyReturn}{Returns}
+Die vordere \hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spaceship_a51fd63c3c0bf5f1bb5d5d7e05db87056}\label{class_spaceship_a51fd63c3c0bf5f1bb5d5d7e05db87056}} 
+\index{Spaceship@{Spaceship}!neues\+\_\+schild@{neues\+\_\+schild}}
+\index{neues\+\_\+schild@{neues\+\_\+schild}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{neues\+\_\+schild()}{neues\_schild()}}
+{\footnotesize\ttfamily void Spaceship.\+neues\+\_\+schild (\begin{DoxyParamCaption}\item[{\hyperlink{class_schild_item}{Schild\+Item}}]{schild\+\_\+neu }\end{DoxyParamCaption})}
+
+
+
+Neues Schild-\/\+Item für dieses \hyperlink{class_raumschiff}{Raumschiff}, z.\+B. wenn der Spieler eins aus seinem \hyperlink{class_inventar}{Inventar} in den Schild-\/\+Item-\/\+Slot zieht 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schild\+\_\+neu} & \hyperlink{class_schild}{Schild} neu.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_acc4b097a3bfdc0cbefe00246dbbcb534}\label{class_spaceship_acc4b097a3bfdc0cbefe00246dbbcb534}} 
+\index{Spaceship@{Spaceship}!remove\+\_\+statuseffect@{remove\+\_\+statuseffect}}
+\index{remove\+\_\+statuseffect@{remove\+\_\+statuseffect}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{remove\+\_\+statuseffect()}{remove\_statuseffect()}}
+{\footnotesize\ttfamily void Spaceship.\+remove\+\_\+statuseffect (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_effect}{Status\+Effect}}]{ef }\end{DoxyParamCaption})}
+
+
+
+Entfernt einen speziellen \hyperlink{class_status_effect}{Status\+Effect} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ef} & Der \hyperlink{class_status_effect}{Status\+Effect}.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_aa022b21fc3d102181d347b1bc1e81cba}\label{class_spaceship_aa022b21fc3d102181d347b1bc1e81cba}} 
+\index{Spaceship@{Spaceship}!remove\+\_\+statuseffects@{remove\+\_\+statuseffects}}
+\index{remove\+\_\+statuseffects@{remove\+\_\+statuseffects}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{remove\+\_\+statuseffects()}{remove\_statuseffects()}}
+{\footnotesize\ttfamily void Spaceship.\+remove\+\_\+statuseffects (\begin{DoxyParamCaption}\item[{\hyperlink{class_status_effect}{Status\+Effect} \mbox{[}$\,$\mbox{]}}]{effects }\end{DoxyParamCaption})}
+
+
+
+Entfernt mehrere Status\+Effects 
+
+
+\begin{DoxyParams}{Parameters}
+{\em effects} & Die Status\+Effects.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a1f8779409140a15e00f3cb4b5c7bec14}\label{class_spaceship_a1f8779409140a15e00f3cb4b5c7bec14}} 
+\index{Spaceship@{Spaceship}!rotate\+\_\+down@{rotate\+\_\+down}}
+\index{rotate\+\_\+down@{rotate\+\_\+down}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{rotate\+\_\+down()}{rotate\_down()}}
+{\footnotesize\ttfamily void Spaceship.\+rotate\+\_\+down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+Dreht das \hyperlink{class_raumschiff}{Raumschiff} nach unten \mbox{\Hypertarget{class_spaceship_a0b021ca84c90939591bb5068542c1dde}\label{class_spaceship_a0b021ca84c90939591bb5068542c1dde}} 
+\index{Spaceship@{Spaceship}!rotate\+\_\+left@{rotate\+\_\+left}}
+\index{rotate\+\_\+left@{rotate\+\_\+left}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{rotate\+\_\+left()}{rotate\_left()}}
+{\footnotesize\ttfamily void Spaceship.\+rotate\+\_\+left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dreht das \hyperlink{class_raumschiff}{Raumschiff} nach links 
+
+\mbox{\Hypertarget{class_spaceship_adaa371fa37ba5b564b15a35b3ff94437}\label{class_spaceship_adaa371fa37ba5b564b15a35b3ff94437}} 
+\index{Spaceship@{Spaceship}!rotate\+\_\+right@{rotate\+\_\+right}}
+\index{rotate\+\_\+right@{rotate\+\_\+right}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{rotate\+\_\+right()}{rotate\_right()}}
+{\footnotesize\ttfamily void Spaceship.\+rotate\+\_\+right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dreht das \hyperlink{class_raumschiff}{Raumschiff} nach rechts 
+
+\mbox{\Hypertarget{class_spaceship_a311d6c40b0c54f11a2da4624a5e2487c}\label{class_spaceship_a311d6c40b0c54f11a2da4624a5e2487c}} 
+\index{Spaceship@{Spaceship}!rotate\+\_\+up@{rotate\+\_\+up}}
+\index{rotate\+\_\+up@{rotate\+\_\+up}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{rotate\+\_\+up()}{rotate\_up()}}
+{\footnotesize\ttfamily void Spaceship.\+rotate\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dreht das \hyperlink{class_raumschiff}{Raumschiff} nach oben 
+
+\mbox{\Hypertarget{class_spaceship_accc7fe7a6f5df4f43fa8b3ab7469c3c7}\label{class_spaceship_accc7fe7a6f5df4f43fa8b3ab7469c3c7}} 
+\index{Spaceship@{Spaceship}!rotation\+\_\+input@{rotation\+\_\+input}}
+\index{rotation\+\_\+input@{rotation\+\_\+input}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{rotation\+\_\+input()}{rotation\_input()}}
+{\footnotesize\ttfamily void Spaceship.\+rotation\+\_\+input (\begin{DoxyParamCaption}\item[{Movement\+Input\+Keys}]{key }\end{DoxyParamCaption})}
+
+
+
+Führt einen gegebenen Rotation-\/\+Input aus 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Gedrückter key.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a627ae269cfe0db00d361c9e4a8ce2413}\label{class_spaceship_a627ae269cfe0db00d361c9e4a8ce2413}} 
+\index{Spaceship@{Spaceship}!set\+\_\+layer@{set\+\_\+layer}}
+\index{set\+\_\+layer@{set\+\_\+layer}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{set\+\_\+layer()}{set\_layer()}}
+{\footnotesize\ttfamily void Spaceship.\+set\+\_\+layer (\begin{DoxyParamCaption}\item[{int}]{n\+\_\+layer }\end{DoxyParamCaption})}
+
+
+
+Setzt für das Object selbst und das Collision Object das Layer fest 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+layer} & Das festzulegende Layer\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_ade12946ccbbfffb92a864b710dc2217d}\label{class_spaceship_ade12946ccbbfffb92a864b710dc2217d}} 
+\index{Spaceship@{Spaceship}!set\+\_\+shield\+\_\+indicator\+\_\+color@{set\+\_\+shield\+\_\+indicator\+\_\+color}}
+\index{set\+\_\+shield\+\_\+indicator\+\_\+color@{set\+\_\+shield\+\_\+indicator\+\_\+color}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{set\+\_\+shield\+\_\+indicator\+\_\+color()}{set\_shield\_indicator\_color()}}
+{\footnotesize\ttfamily void Spaceship.\+set\+\_\+shield\+\_\+indicator\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Legt die Farben für die Schild-\/\+Viertelkreise fest 
+
+\mbox{\Hypertarget{class_spaceship_a0eaf7f4995770c01eafeabe3a43c2af3}\label{class_spaceship_a0eaf7f4995770c01eafeabe3a43c2af3}} 
+\index{Spaceship@{Spaceship}!set\+\_\+shieldpart\+\_\+color@{set\+\_\+shieldpart\+\_\+color}}
+\index{set\+\_\+shieldpart\+\_\+color@{set\+\_\+shieldpart\+\_\+color}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{set\+\_\+shieldpart\+\_\+color()}{set\_shieldpart\_color()}}
+{\footnotesize\ttfamily void Spaceship.\+set\+\_\+shieldpart\+\_\+color (\begin{DoxyParamCaption}\item[{Game\+Object}]{shield,  }\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Legt die Farbe für ein Viertelkreis-\/\+Schildobject fest 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shield} & Schild-\/\+Object.\\
+\hline
+{\em color} & Color.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_ab0ef968d5442e5d536bcc0d887beacc6}\label{class_spaceship_ab0ef968d5442e5d536bcc0d887beacc6}} 
+\index{Spaceship@{Spaceship}!set\+\_\+target\+\_\+speed@{set\+\_\+target\+\_\+speed}}
+\index{set\+\_\+target\+\_\+speed@{set\+\_\+target\+\_\+speed}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{set\+\_\+target\+\_\+speed()}{set\_target\_speed()}}
+{\footnotesize\ttfamily void Spaceship.\+set\+\_\+target\+\_\+speed (\begin{DoxyParamCaption}\item[{float}]{s }\end{DoxyParamCaption})}
+
+
+
+Setzt eine Zielgeschwindigkeit für das \hyperlink{class_raumschiff}{Raumschiff} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Zielgeschwindigkeit.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a18e0ef162384544259aa3ec4f55ad5f8}\label{class_spaceship_a18e0ef162384544259aa3ec4f55ad5f8}} 
+\index{Spaceship@{Spaceship}!setup\+\_\+shield\+\_\+gos@{setup\+\_\+shield\+\_\+gos}}
+\index{setup\+\_\+shield\+\_\+gos@{setup\+\_\+shield\+\_\+gos}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{setup\+\_\+shield\+\_\+gos()}{setup\_shield\_gos()}}
+{\footnotesize\ttfamily void Spaceship.\+setup\+\_\+shield\+\_\+gos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Legt die Viertelkreisobjekte für den Schild-\/\+Anzeiger fest 
+
+\mbox{\Hypertarget{class_spaceship_a65c885ff5b2c4b2142d02ed093d734a2}\label{class_spaceship_a65c885ff5b2c4b2142d02ed093d734a2}} 
+\index{Spaceship@{Spaceship}!setup\+\_\+standard\+\_\+items@{setup\+\_\+standard\+\_\+items}}
+\index{setup\+\_\+standard\+\_\+items@{setup\+\_\+standard\+\_\+items}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{setup\+\_\+standard\+\_\+items()}{setup\_standard\_items()}}
+{\footnotesize\ttfamily void Spaceship.\+setup\+\_\+standard\+\_\+items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Legt die Items fest, die standardmäßig auf dem \hyperlink{class_raumschiff}{Raumschiff} vorhanden sind. (Das gilt nicht für den Spieler selbst, da dieser auch eigene Item-\/\+Kombinationen auf seinem \hyperlink{class_raumschiff}{Raumschiff} haben kann.) 
+
+\mbox{\Hypertarget{class_spaceship_a5c0e06422ea1860e18dce8171a585676}\label{class_spaceship_a5c0e06422ea1860e18dce8171a585676}} 
+\index{Spaceship@{Spaceship}!speed\+\_\+input@{speed\+\_\+input}}
+\index{speed\+\_\+input@{speed\+\_\+input}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{speed\+\_\+input()}{speed\_input()}}
+{\footnotesize\ttfamily void Spaceship.\+speed\+\_\+input (\begin{DoxyParamCaption}\item[{Movement\+Input\+Keys}]{key }\end{DoxyParamCaption})}
+
+
+
+Führt einen gegebenen Speed-\/\+Input aus 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Gedrückter key.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spaceship_a4a932f067ed922c34f82fa4479dbdf4d}\label{class_spaceship_a4a932f067ed922c34f82fa4479dbdf4d}} 
+\index{Spaceship@{Spaceship}!warp\+\_\+in@{warp\+\_\+in}}
+\index{warp\+\_\+in@{warp\+\_\+in}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{warp\+\_\+in()}{warp\_in()}}
+{\footnotesize\ttfamily void Spaceship.\+warp\+\_\+in (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lässt das \hyperlink{class_raumschiff}{Raumschiff} reinwarpen 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_spaceship_a28d8649c7000f2f6626f88663b4248be}\label{class_spaceship_a28d8649c7000f2f6626f88663b4248be}} 
+\index{Spaceship@{Spaceship}!accel@{accel}}
+\index{accel@{accel}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{accel}{accel}}
+{\footnotesize\ttfamily float Spaceship.\+accel}
+
+
+
+Gibt an, wie stark das \hyperlink{class_raumschiff}{Raumschiff} beschleunigen kann 
+
+\mbox{\Hypertarget{class_spaceship_a5958b60df7a824952944bfa3c201676f}\label{class_spaceship_a5958b60df7a824952944bfa3c201676f}} 
+\index{Spaceship@{Spaceship}!active\+\_\+spaceships@{active\+\_\+spaceships}}
+\index{active\+\_\+spaceships@{active\+\_\+spaceships}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{active\+\_\+spaceships}{active\_spaceships}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_spaceship}{Spaceship}$>$ Spaceship.\+active\+\_\+spaceships = new List$<$\hyperlink{class_spaceship}{Spaceship}$>$ ()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Alle aktiven Spaceship-\/\+Instanzen in der Scene, die nicht destroyed sind 
+
+\mbox{\Hypertarget{class_spaceship_ad33632d0f3e88bdeae6f711044e53a4e}\label{class_spaceship_ad33632d0f3e88bdeae6f711044e53a4e}} 
+\index{Spaceship@{Spaceship}!antrieb\+\_\+type@{antrieb\+\_\+type}}
+\index{antrieb\+\_\+type@{antrieb\+\_\+type}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{antrieb\+\_\+type}{antrieb\_type}}
+{\footnotesize\ttfamily Antrieb\+Type Spaceship.\+antrieb\+\_\+type = Antrieb\+Type.\+Impuls}
+
+
+
+Der Antrieb, der zurzeit benutzt wird (Warp/\+Impuls) 
+
+\mbox{\Hypertarget{class_spaceship_a904d291eba352540e2531359789a182f}\label{class_spaceship_a904d291eba352540e2531359789a182f}} 
+\index{Spaceship@{Spaceship}!auspuff@{auspuff}}
+\index{auspuff@{auspuff}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{auspuff}{auspuff}}
+{\footnotesize\ttfamily Game\+Object Spaceship.\+auspuff}
+
+
+
+G\+FX für die Impulsantriebspur 
+
+\mbox{\Hypertarget{class_spaceship_ac19d442ae4d44180f76a3875ec0a496b}\label{class_spaceship_ac19d442ae4d44180f76a3875ec0a496b}} 
+\index{Spaceship@{Spaceship}!auto\+\_\+navigation\+\_\+bug\+\_\+180\+\_\+correction\+\_\+axis@{auto\+\_\+navigation\+\_\+bug\+\_\+180\+\_\+correction\+\_\+axis}}
+\index{auto\+\_\+navigation\+\_\+bug\+\_\+180\+\_\+correction\+\_\+axis@{auto\+\_\+navigation\+\_\+bug\+\_\+180\+\_\+correction\+\_\+axis}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{auto\+\_\+navigation\+\_\+bug\+\_\+180\+\_\+correction\+\_\+axis}{auto\_navigation\_bug\_180\_correction\_axis}}
+{\footnotesize\ttfamily Vector3 Spaceship.\+auto\+\_\+navigation\+\_\+bug\+\_\+180\+\_\+correction\+\_\+axis = new Vector3 (0, 1, 0)}
+
+
+
+Sollte das \hyperlink{class_raumschiff}{Raumschiff} in die entgegengesetzte Richtung fliegen, muss eine neue Achse für die Rotation hinzugefügt werden. Aufgrund der Behebung eines anderen Fehlers tritt dies nun aber nicht mehr ein. (Genaugenommen ist dies kein Bug, sondern nur eine logische Konzequenz des Kreuzproduktes. Da dies aber zuerst wie ein Bug aussah, heißt es immer noch Bug) 
+
+\mbox{\Hypertarget{class_spaceship_a14d21edf96d6a77e14d975b506275e7e}\label{class_spaceship_a14d21edf96d6a77e14d975b506275e7e}} 
+\index{Spaceship@{Spaceship}!auto\+\_\+navigation\+\_\+target\+\_\+distance@{auto\+\_\+navigation\+\_\+target\+\_\+distance}}
+\index{auto\+\_\+navigation\+\_\+target\+\_\+distance@{auto\+\_\+navigation\+\_\+target\+\_\+distance}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{auto\+\_\+navigation\+\_\+target\+\_\+distance}{auto\_navigation\_target\_distance}}
+{\footnotesize\ttfamily const float Spaceship.\+auto\+\_\+navigation\+\_\+target\+\_\+distance = 60}
+
+
+
+Gibt an, wie nah das \hyperlink{class_raumschiff}{Raumschiff} am Ziel dran sein muss, um den Auto-\/\+Piloten abzuschalten 
+
+\mbox{\Hypertarget{class_spaceship_ad7b81478ac9e68d3b28d84ccda1b0e5f}\label{class_spaceship_ad7b81478ac9e68d3b28d84ccda1b0e5f}} 
+\index{Spaceship@{Spaceship}!auto\+\_\+navigation\+\_\+target\+\_\+object@{auto\+\_\+navigation\+\_\+target\+\_\+object}}
+\index{auto\+\_\+navigation\+\_\+target\+\_\+object@{auto\+\_\+navigation\+\_\+target\+\_\+object}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{auto\+\_\+navigation\+\_\+target\+\_\+object}{auto\_navigation\_target\_object}}
+{\footnotesize\ttfamily Game\+Object Spaceship.\+auto\+\_\+navigation\+\_\+target\+\_\+object}
+
+
+
+Zielobjekt des Auto-\/\+Piloten 
+
+\mbox{\Hypertarget{class_spaceship_a6190772ff13072113beda25fcc6469ce}\label{class_spaceship_a6190772ff13072113beda25fcc6469ce}} 
+\index{Spaceship@{Spaceship}!auto\+\_\+navigation\+\_\+target\+\_\+speed@{auto\+\_\+navigation\+\_\+target\+\_\+speed}}
+\index{auto\+\_\+navigation\+\_\+target\+\_\+speed@{auto\+\_\+navigation\+\_\+target\+\_\+speed}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{auto\+\_\+navigation\+\_\+target\+\_\+speed}{auto\_navigation\_target\_speed}}
+{\footnotesize\ttfamily float Spaceship.\+auto\+\_\+navigation\+\_\+target\+\_\+speed = 4}
+
+
+
+Normale Reisegeschwindigkeit des Auto-\/\+Piloten 
+
+\mbox{\Hypertarget{class_spaceship_a8c2becac0f8d20fcb380a1e79b196131}\label{class_spaceship_a8c2becac0f8d20fcb380a1e79b196131}} 
+\index{Spaceship@{Spaceship}!base\+\_\+rotation\+\_\+speed@{base\+\_\+rotation\+\_\+speed}}
+\index{base\+\_\+rotation\+\_\+speed@{base\+\_\+rotation\+\_\+speed}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{base\+\_\+rotation\+\_\+speed}{base\_rotation\_speed}}
+{\footnotesize\ttfamily float Spaceship.\+base\+\_\+rotation\+\_\+speed}
+
+
+
+Basis Drehgeschwindigkeit 
+
+\mbox{\Hypertarget{class_spaceship_a7a1ae8f60dc0535577c90ac06e5c86cd}\label{class_spaceship_a7a1ae8f60dc0535577c90ac06e5c86cd}} 
+\index{Spaceship@{Spaceship}!cloak\+\_\+effect\+\_\+alpha@{cloak\+\_\+effect\+\_\+alpha}}
+\index{cloak\+\_\+effect\+\_\+alpha@{cloak\+\_\+effect\+\_\+alpha}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{cloak\+\_\+effect\+\_\+alpha}{cloak\_effect\_alpha}}
+{\footnotesize\ttfamily const float Spaceship.\+cloak\+\_\+effect\+\_\+alpha = 0.\+4f}
+
+
+
+Durchsichtigkeit des Raumschiffs bei Tarnung 
+
+\mbox{\Hypertarget{class_spaceship_a5d9e0a694b1e357eef2f13755e8d2db1}\label{class_spaceship_a5d9e0a694b1e357eef2f13755e8d2db1}} 
+\index{Spaceship@{Spaceship}!destroyed@{destroyed}}
+\index{destroyed@{destroyed}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{destroyed}{destroyed}}
+{\footnotesize\ttfamily bool Spaceship.\+destroyed = false}
+
+
+
+Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} zerstört ist. 
+
+\mbox{\Hypertarget{class_spaceship_ae434c25796c8b4522fcb41e3abda56d9}\label{class_spaceship_ae434c25796c8b4522fcb41e3abda56d9}} 
+\index{Spaceship@{Spaceship}!destroyed\+\_\+deform\+\_\+factor@{destroyed\+\_\+deform\+\_\+factor}}
+\index{destroyed\+\_\+deform\+\_\+factor@{destroyed\+\_\+deform\+\_\+factor}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{destroyed\+\_\+deform\+\_\+factor}{destroyed\_deform\_factor}}
+{\footnotesize\ttfamily float Spaceship.\+destroyed\+\_\+deform\+\_\+factor = 1}
+
+
+
+Bestimmt, wie stark das \hyperlink{class_spaceship}{Spaceship} bei Zerstörung verformt wird 
+
+\mbox{\Hypertarget{class_spaceship_aa88ea0cfef593a18db011de1ca41c335}\label{class_spaceship_aa88ea0cfef593a18db011de1ca41c335}} 
+\index{Spaceship@{Spaceship}!gfx\+\_\+parent@{gfx\+\_\+parent}}
+\index{gfx\+\_\+parent@{gfx\+\_\+parent}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{gfx\+\_\+parent}{gfx\_parent}}
+{\footnotesize\ttfamily Game\+Object Spaceship.\+gfx\+\_\+parent}
+
+
+
+Das Game\+Object, das die G\+FX beinhaltet (häufig das Object selbst) 
+
+\mbox{\Hypertarget{class_spaceship_afe9aabc5e72224e51baf21791e026bd0}\label{class_spaceship_afe9aabc5e72224e51baf21791e026bd0}} 
+\index{Spaceship@{Spaceship}!has\+\_\+shield\+\_\+indicator@{has\+\_\+shield\+\_\+indicator}}
+\index{has\+\_\+shield\+\_\+indicator@{has\+\_\+shield\+\_\+indicator}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{has\+\_\+shield\+\_\+indicator}{has\_shield\_indicator}}
+{\footnotesize\ttfamily bool Spaceship.\+has\+\_\+shield\+\_\+indicator = true}
+
+
+
+Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} Schild-\/\+Anzeiger hat (die vier Viertelkreise) 
+
+\mbox{\Hypertarget{class_spaceship_a6a17ebe141b503299caf808301bf60aa}\label{class_spaceship_a6a17ebe141b503299caf808301bf60aa}} 
+\index{Spaceship@{Spaceship}!immortal@{immortal}}
+\index{immortal@{immortal}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{immortal}{immortal}}
+{\footnotesize\ttfamily bool Spaceship.\+immortal = false}
+
+
+
+Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} zerstörbar ist. (Nur für Testzwecke) 
+
+\mbox{\Hypertarget{class_spaceship_a2f4055a6f9d52ba2ec599e86280f5325}\label{class_spaceship_a2f4055a6f9d52ba2ec599e86280f5325}} 
+\index{Spaceship@{Spaceship}!impuls\+\_\+antrieb@{impuls\+\_\+antrieb}}
+\index{impuls\+\_\+antrieb@{impuls\+\_\+antrieb}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{impuls\+\_\+antrieb}{impuls\_antrieb}}
+{\footnotesize\ttfamily \hyperlink{class_impuls_antrieb}{Impuls\+Antrieb} Spaceship.\+impuls\+\_\+antrieb}
+
+
+
+Das Impuls-\/\+Antriebs-\/\+Item, das dem Schiff zugewiesen ist 
+
+\mbox{\Hypertarget{class_spaceship_a6088ab385c31a4133eb7418bc79dd31b}\label{class_spaceship_a6088ab385c31a4133eb7418bc79dd31b}} 
+\index{Spaceship@{Spaceship}!is\+\_\+auto\+\_\+navigating@{is\+\_\+auto\+\_\+navigating}}
+\index{is\+\_\+auto\+\_\+navigating@{is\+\_\+auto\+\_\+navigating}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{is\+\_\+auto\+\_\+navigating}{is\_auto\_navigating}}
+{\footnotesize\ttfamily bool Spaceship.\+is\+\_\+auto\+\_\+navigating}
+
+
+
+Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} gerade den Auto-\/\+Pilot an hat 
+
+\mbox{\Hypertarget{class_spaceship_a012d6f0509e4e4c6afbeaa81b80c4b23}\label{class_spaceship_a012d6f0509e4e4c6afbeaa81b80c4b23}} 
+\index{Spaceship@{Spaceship}!is\+\_\+cloaking@{is\+\_\+cloaking}}
+\index{is\+\_\+cloaking@{is\+\_\+cloaking}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{is\+\_\+cloaking}{is\_cloaking}}
+{\footnotesize\ttfamily bool Spaceship.\+is\+\_\+cloaking = false}
+
+
+
+Gibt an, ob sich das \hyperlink{class_raumschiff}{Raumschiff} gerade tarnt 
+
+\mbox{\Hypertarget{class_spaceship_a1e950732e18a6aa13fbbc4b24bce7fe6}\label{class_spaceship_a1e950732e18a6aa13fbbc4b24bce7fe6}} 
+\index{Spaceship@{Spaceship}!max\+\_\+attack\+\_\+distance@{max\+\_\+attack\+\_\+distance}}
+\index{max\+\_\+attack\+\_\+distance@{max\+\_\+attack\+\_\+distance}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{max\+\_\+attack\+\_\+distance}{max\_attack\_distance}}
+{\footnotesize\ttfamily float Spaceship.\+max\+\_\+attack\+\_\+distance = 2000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Maximale Angriffsdistanz der Raumschiffe 
+
+\mbox{\Hypertarget{class_spaceship_a2ecf9e8c9ba5fbc7b53f731b8c364e20}\label{class_spaceship_a2ecf9e8c9ba5fbc7b53f731b8c364e20}} 
+\index{Spaceship@{Spaceship}!max\+\_\+structural\+\_\+integrity@{max\+\_\+structural\+\_\+integrity}}
+\index{max\+\_\+structural\+\_\+integrity@{max\+\_\+structural\+\_\+integrity}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{max\+\_\+structural\+\_\+integrity}{max\_structural\_integrity}}
+{\footnotesize\ttfamily float Spaceship.\+max\+\_\+structural\+\_\+integrity = 100}
+
+
+
+Die maximale Hüllenstärke 
+
+\mbox{\Hypertarget{class_spaceship_a96369ccf86f31837d7d7ae63636e780f}\label{class_spaceship_a96369ccf86f31837d7d7ae63636e780f}} 
+\index{Spaceship@{Spaceship}!max\+\_\+total\+\_\+shields@{max\+\_\+total\+\_\+shields}}
+\index{max\+\_\+total\+\_\+shields@{max\+\_\+total\+\_\+shields}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{max\+\_\+total\+\_\+shields}{max\_total\_shields}}
+{\footnotesize\ttfamily float Spaceship.\+max\+\_\+total\+\_\+shields = 0}
+
+
+
+Maximale Schildstärke 
+
+\mbox{\Hypertarget{class_spaceship_a44d9e635e6d659a4de6808bb36770ea5}\label{class_spaceship_a44d9e635e6d659a4de6808bb36770ea5}} 
+\index{Spaceship@{Spaceship}!max\+\_\+x\+\_\+rotation@{max\+\_\+x\+\_\+rotation}}
+\index{max\+\_\+x\+\_\+rotation@{max\+\_\+x\+\_\+rotation}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{max\+\_\+x\+\_\+rotation}{max\_x\_rotation}}
+{\footnotesize\ttfamily const float Spaceship.\+max\+\_\+x\+\_\+rotation = 65}
+
+
+
+Gibt den maximalen Drehwinkel an, den ein nicht-\/\+Spieler-\/\+Raumschiff in der lokalen x-\/\+Achse haben kann 
+
+\mbox{\Hypertarget{class_spaceship_a862815bd4b04d532e2894ced48d2acc6}\label{class_spaceship_a862815bd4b04d532e2894ced48d2acc6}} 
+\index{Spaceship@{Spaceship}!min\+\_\+out\+\_\+of\+\_\+combat\+\_\+time@{min\+\_\+out\+\_\+of\+\_\+combat\+\_\+time}}
+\index{min\+\_\+out\+\_\+of\+\_\+combat\+\_\+time@{min\+\_\+out\+\_\+of\+\_\+combat\+\_\+time}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{min\+\_\+out\+\_\+of\+\_\+combat\+\_\+time}{min\_out\_of\_combat\_time}}
+{\footnotesize\ttfamily const float Spaceship.\+min\+\_\+out\+\_\+of\+\_\+combat\+\_\+time = 5}
+
+
+
+die Zeit, in der man nicht im Kampf sein darf, um den \char`\"{}out-\/of-\/combat\char`\"{} status zu erhalten 
+
+\mbox{\Hypertarget{class_spaceship_ab3545f7f8a0bc4e106c58ee829a8c195}\label{class_spaceship_ab3545f7f8a0bc4e106c58ee829a8c195}} 
+\index{Spaceship@{Spaceship}!minimap\+\_\+icon\+\_\+created@{minimap\+\_\+icon\+\_\+created}}
+\index{minimap\+\_\+icon\+\_\+created@{minimap\+\_\+icon\+\_\+created}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{minimap\+\_\+icon\+\_\+created}{minimap\_icon\_created}}
+{\footnotesize\ttfamily bool Spaceship.\+minimap\+\_\+icon\+\_\+created = false}
+
+
+
+Gibt an, ob für dieses \hyperlink{class_spaceship}{Spaceship} schon ein Icon auf der \hyperlink{class_minimap}{Minimap} erstellt wurde 
+
+\mbox{\Hypertarget{class_spaceship_aad3c0baa850f85ef7432c0ea6f0e003e}\label{class_spaceship_aad3c0baa850f85ef7432c0ea6f0e003e}} 
+\index{Spaceship@{Spaceship}!modules@{modules}}
+\index{modules@{modules}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{modules}{modules}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_spaceship_module}{Spaceship\+Module}$>$ Spaceship.\+modules = new List$<$\hyperlink{class_spaceship_module}{Spaceship\+Module}$>$()}
+
+
+
+Die Raumschiffe-\/\+Module, mit denen dieses \hyperlink{class_raumschiff}{Raumschiff} ausgestattet ist 
+
+\mbox{\Hypertarget{class_spaceship_a771d4dcd411d0d08d1c2a67fd6b5f5c1}\label{class_spaceship_a771d4dcd411d0d08d1c2a67fd6b5f5c1}} 
+\index{Spaceship@{Spaceship}!raumschiff@{raumschiff}}
+\index{raumschiff@{raumschiff}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{raumschiff}{raumschiff}}
+{\footnotesize\ttfamily \hyperlink{class_raumschiff}{Raumschiff} Spaceship.\+raumschiff}
+
+
+
+Ein Scriptable\+Object mit den nötigen Informationen zu diesem \hyperlink{class_spaceship}{Spaceship} 
+
+\mbox{\Hypertarget{class_spaceship_a1322e387e2296dbc3b47323f095d98fa}\label{class_spaceship_a1322e387e2296dbc3b47323f095d98fa}} 
+\index{Spaceship@{Spaceship}!rotation\+\_\+z\+\_\+axis\+\_\+tilt\+\_\+amount@{rotation\+\_\+z\+\_\+axis\+\_\+tilt\+\_\+amount}}
+\index{rotation\+\_\+z\+\_\+axis\+\_\+tilt\+\_\+amount@{rotation\+\_\+z\+\_\+axis\+\_\+tilt\+\_\+amount}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{rotation\+\_\+z\+\_\+axis\+\_\+tilt\+\_\+amount}{rotation\_z\_axis\_tilt\_amount}}
+{\footnotesize\ttfamily const float Spaceship.\+rotation\+\_\+z\+\_\+axis\+\_\+tilt\+\_\+amount = 20}
+
+
+
+Gibt an, wie stark sich das \hyperlink{class_raumschiff}{Raumschiff} bei Links/\+Rechts-\/\+Drehung um die lokale z-\/\+Achse (vorwärts-\/\+Achse) dreht 
+
+\mbox{\Hypertarget{class_spaceship_a45e154e6dacd6da7c800c94a05dd27b0}\label{class_spaceship_a45e154e6dacd6da7c800c94a05dd27b0}} 
+\index{Spaceship@{Spaceship}!schild@{schild}}
+\index{schild@{schild}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{schild}{schild}}
+{\footnotesize\ttfamily \hyperlink{class_schild}{Schild} Spaceship.\+schild}
+
+
+
+Eine Schild-\/\+Instanz, die die Informationen bezüglich Schildstärke etc. beinhaltet. 
+
+\mbox{\Hypertarget{class_spaceship_a40f7992de603fb76e22c3dcce1b63292}\label{class_spaceship_a40f7992de603fb76e22c3dcce1b63292}} 
+\index{Spaceship@{Spaceship}!schild\+\_\+collision\+\_\+object@{schild\+\_\+collision\+\_\+object}}
+\index{schild\+\_\+collision\+\_\+object@{schild\+\_\+collision\+\_\+object}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{schild\+\_\+collision\+\_\+object}{schild\_collision\_object}}
+{\footnotesize\ttfamily Game\+Object Spaceship.\+schild\+\_\+collision\+\_\+object}
+
+
+
+Das Game\+Object, das für die Schild-\/\+Schild-\/\+Graphik und die Collision zuständig ist 
+
+\mbox{\Hypertarget{class_spaceship_a128777395236ab7a2ef22f1f44ef903b}\label{class_spaceship_a128777395236ab7a2ef22f1f44ef903b}} 
+\index{Spaceship@{Spaceship}!shields@{shields}}
+\index{shields@{shields}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{shields}{shields}}
+{\footnotesize\ttfamily Game\+Object Spaceship.\+shields}
+
+
+
+Die vier Game\+Objects der Viertelkreise, die die jeweilige Schildstärke angeben 
+
+\mbox{\Hypertarget{class_spaceship_a3b6cdeee7ecba55cf3807661e8662bea}\label{class_spaceship_a3b6cdeee7ecba55cf3807661e8662bea}} 
+\index{Spaceship@{Spaceship}!spaceship\+\_\+group\+\_\+type@{spaceship\+\_\+group\+\_\+type}}
+\index{spaceship\+\_\+group\+\_\+type@{spaceship\+\_\+group\+\_\+type}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{spaceship\+\_\+group\+\_\+type}{spaceship\_group\_type}}
+{\footnotesize\ttfamily Object\+Group\+Type Spaceship.\+spaceship\+\_\+group\+\_\+type = Object\+Group\+Type.\+None}
+
+
+
+Die Gruppe, in der diese Spaceship-\/\+Instanz drin ist (Spieler/\+Gegner) 
+
+\mbox{\Hypertarget{class_spaceship_acdd2d51050e8368133ae24362d7b2ddf}\label{class_spaceship_acdd2d51050e8368133ae24362d7b2ddf}} 
+\index{Spaceship@{Spaceship}!spaceship\+\_\+stats\+\_\+depend\+\_\+on\+\_\+items@{spaceship\+\_\+stats\+\_\+depend\+\_\+on\+\_\+items}}
+\index{spaceship\+\_\+stats\+\_\+depend\+\_\+on\+\_\+items@{spaceship\+\_\+stats\+\_\+depend\+\_\+on\+\_\+items}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{spaceship\+\_\+stats\+\_\+depend\+\_\+on\+\_\+items}{spaceship\_stats\_depend\_on\_items}}
+{\footnotesize\ttfamily bool Spaceship.\+spaceship\+\_\+stats\+\_\+depend\+\_\+on\+\_\+items = true}
+
+
+
+Gibt an, ob die \hyperlink{class_spaceship}{Spaceship} stats (Geschwindigkeit etc.) von den Items abhängen und nicht von den Werten, die im Inspector zugeordnet wurden. ( Wurde früher für Test-\/\+Zwecke benutzt, jetzt aber nicht mehr. 
+
+\mbox{\Hypertarget{class_spaceship_a3da1d2ff9be863bb80ea7fa2a6c3db06}\label{class_spaceship_a3da1d2ff9be863bb80ea7fa2a6c3db06}} 
+\index{Spaceship@{Spaceship}!spaceship\+Weapon\+Positions@{spaceship\+Weapon\+Positions}}
+\index{spaceship\+Weapon\+Positions@{spaceship\+Weapon\+Positions}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{spaceship\+Weapon\+Positions}{spaceshipWeaponPositions}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position}$>$ Spaceship.\+spaceship\+Weapon\+Positions}
+
+
+
+Die Waffenpositionen des Raumschiffs, also die Orte, von denen \hyperlink{class_phaser}{Phaser}, Torpedos etc. abgefeuert werden können 
+
+\mbox{\Hypertarget{class_spaceship_a66af2928c7df3d1050d5a730a179b922}\label{class_spaceship_a66af2928c7df3d1050d5a730a179b922}} 
+\index{Spaceship@{Spaceship}!speed@{speed}}
+\index{speed@{speed}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Spaceship.\+speed}
+
+
+
+Eingestellte Geschwindigkeit des Raumschiffs, z.\+B durch den Spieler-\/\+Input (E/Q), zwischen -\/1 und 4 
+
+\mbox{\Hypertarget{class_spaceship_a55f3116d23628f01925dd1b7f4a053e9}\label{class_spaceship_a55f3116d23628f01925dd1b7f4a053e9}} 
+\index{Spaceship@{Spaceship}!start\+\_\+pos@{start\+\_\+pos}}
+\index{start\+\_\+pos@{start\+\_\+pos}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{start\+\_\+pos}{start\_pos}}
+{\footnotesize\ttfamily Vector3 Spaceship.\+start\+\_\+pos}
+
+
+
+Startposition vor dem Reinwarpen, also Ziel des Warps 
+
+\mbox{\Hypertarget{class_spaceship_a54d20dc0f35e14abec24c50e060353b8}\label{class_spaceship_a54d20dc0f35e14abec24c50e060353b8}} 
+\index{Spaceship@{Spaceship}!status\+\_\+effects@{status\+\_\+effects}}
+\index{status\+\_\+effects@{status\+\_\+effects}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{status\+\_\+effects}{status\_effects}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_status_effect}{Status\+Effect}$>$ Spaceship.\+status\+\_\+effects}
+
+
+
+Die Status-\/\+Effekte, die auf dem Schiff sind. (Buffs/\+Debuffs) 
+
+\mbox{\Hypertarget{class_spaceship_a7ac37ce79a081b8bc4cdedf741be9043}\label{class_spaceship_a7ac37ce79a081b8bc4cdedf741be9043}} 
+\index{Spaceship@{Spaceship}!structural\+\_\+integrity@{structural\+\_\+integrity}}
+\index{structural\+\_\+integrity@{structural\+\_\+integrity}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{structural\+\_\+integrity}{structural\_integrity}}
+{\footnotesize\ttfamily float Spaceship.\+structural\+\_\+integrity = 0}
+
+
+
+Die aktuelle Hüllenstärke 
+
+\mbox{\Hypertarget{class_spaceship_a79ee5cdccdede956de6eae9a1619ccbc}\label{class_spaceship_a79ee5cdccdede956de6eae9a1619ccbc}} 
+\index{Spaceship@{Spaceship}!warp\+\_\+antrieb@{warp\+\_\+antrieb}}
+\index{warp\+\_\+antrieb@{warp\+\_\+antrieb}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{warp\+\_\+antrieb}{warp\_antrieb}}
+{\footnotesize\ttfamily \hyperlink{class_warp_antrieb}{Warp\+Antrieb} Spaceship.\+warp\+\_\+antrieb}
+
+
+
+Das Warp-\/\+Antriebs-\/\+Item, das dem Schiff zugewiesen ist 
+
+\mbox{\Hypertarget{class_spaceship_acef63fb7a63f7ee3cd351ecbbaaf4347}\label{class_spaceship_acef63fb7a63f7ee3cd351ecbbaaf4347}} 
+\index{Spaceship@{Spaceship}!warp\+\_\+in\+\_\+startpoint@{warp\+\_\+in\+\_\+startpoint}}
+\index{warp\+\_\+in\+\_\+startpoint@{warp\+\_\+in\+\_\+startpoint}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{warp\+\_\+in\+\_\+startpoint}{warp\_in\_startpoint}}
+{\footnotesize\ttfamily Game\+Object Spaceship.\+warp\+\_\+in\+\_\+startpoint}
+
+
+
+Wenn das \hyperlink{class_raumschiff}{Raumschiff} am Anfang in die Szene reinwarpen sollte, gibt dieses Game\+Object die Position des Punktes an, an dem der Warpflug beginnt 
+
+\mbox{\Hypertarget{class_spaceship_a1cb2c76d5ed1db05cba652b7a9cd71ca}\label{class_spaceship_a1cb2c76d5ed1db05cba652b7a9cd71ca}} 
+\index{Spaceship@{Spaceship}!warpin\+\_\+start\+\_\+pos@{warpin\+\_\+start\+\_\+pos}}
+\index{warpin\+\_\+start\+\_\+pos@{warpin\+\_\+start\+\_\+pos}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{warpin\+\_\+start\+\_\+pos}{warpin\_start\_pos}}
+{\footnotesize\ttfamily Vector3 Spaceship.\+warpin\+\_\+start\+\_\+pos}
+
+
+
+Startposition des Reinwarpens 
+
+\mbox{\Hypertarget{class_spaceship_a17928c1e3b04001aaf33e9083731c647}\label{class_spaceship_a17928c1e3b04001aaf33e9083731c647}} 
+\index{Spaceship@{Spaceship}!warping\+\_\+in@{warping\+\_\+in}}
+\index{warping\+\_\+in@{warping\+\_\+in}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{warping\+\_\+in}{warping\_in}}
+{\footnotesize\ttfamily bool Spaceship.\+warping\+\_\+in = false}
+
+
+
+Gibt an, ob das \hyperlink{class_raumschiff}{Raumschiff} gerade am Reinwarpen ist 
+
+\mbox{\Hypertarget{class_spaceship_afe502a70397991dae3950bc9f96d9278}\label{class_spaceship_afe502a70397991dae3950bc9f96d9278}} 
+\index{Spaceship@{Spaceship}!warpspur@{warpspur}}
+\index{warpspur@{warpspur}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{warpspur}{warpspur}}
+{\footnotesize\ttfamily Game\+Object Spaceship.\+warpspur}
+
+
+
+G\+FX hinter dem \hyperlink{class_raumschiff}{Raumschiff} bei Warp (wird nicht mehr benutzt) 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_spaceship_a459b3d62a7e0a7e76b7a019de5b386e1}\label{class_spaceship_a459b3d62a7e0a7e76b7a019de5b386e1}} 
+\index{Spaceship@{Spaceship}!can\+\_\+attack@{can\+\_\+attack}}
+\index{can\+\_\+attack@{can\+\_\+attack}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{can\+\_\+attack}{can\_attack}}
+{\footnotesize\ttfamily bool Spaceship.\+can\+\_\+attack\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Prüft, ob dieses \hyperlink{class_spaceship}{Spaceship} angreifen kann. 
+
+{\ttfamily true} wenn das \hyperlink{class_raumschiff}{Raumschiff} angreifen kann; sonst {\ttfamily false}.\mbox{\Hypertarget{class_spaceship_ad98db7a91256b60c912c508cff2f001d}\label{class_spaceship_ad98db7a91256b60c912c508cff2f001d}} 
+\index{Spaceship@{Spaceship}!damage\+\_\+output@{damage\+\_\+output}}
+\index{damage\+\_\+output@{damage\+\_\+output}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{damage\+\_\+output}{damage\_output}}
+{\footnotesize\ttfamily float Spaceship.\+damage\+\_\+output\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gibt einen Schadens-\/\+Multiplier zurück Dieser ist abhängig von den Statuseffekten (Buffs/\+Debuffs), die auf dem \hyperlink{class_raumschiff}{Raumschiff} sind 
+
+Der Schadens-\/\+Multiplier\mbox{\Hypertarget{class_spaceship_a89158e2a2dc71a98acb3c3755962c144}\label{class_spaceship_a89158e2a2dc71a98acb3c3755962c144}} 
+\index{Spaceship@{Spaceship}!equipped\+\_\+items@{equipped\+\_\+items}}
+\index{equipped\+\_\+items@{equipped\+\_\+items}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{equipped\+\_\+items}{equipped\_items}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_item}{Item}$>$ Spaceship.\+equipped\+\_\+items\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gibt eine Liste aller Items zurück, die zurzeit auf dem \hyperlink{class_raumschiff}{Raumschiff} sind 
+
+Die ausgerüsteten Items\mbox{\Hypertarget{class_spaceship_a008e4fcc8af1c4ebbaee64603593d6d1}\label{class_spaceship_a008e4fcc8af1c4ebbaee64603593d6d1}} 
+\index{Spaceship@{Spaceship}!in\+\_\+battle@{in\+\_\+battle}}
+\index{in\+\_\+battle@{in\+\_\+battle}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{in\+\_\+battle}{in\_battle}}
+{\footnotesize\ttfamily bool Spaceship.\+in\+\_\+battle\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gibt an, ob das \hyperlink{class_spaceship}{Spaceship} im Kampf ist. 
+
+{\ttfamily true} wenn ja; sonst, {\ttfamily false}.\mbox{\Hypertarget{class_spaceship_a9dfc7adf86ae18216d0244326e7a6ebf}\label{class_spaceship_a9dfc7adf86ae18216d0244326e7a6ebf}} 
+\index{Spaceship@{Spaceship}!max\+\_\+speed@{max\+\_\+speed}}
+\index{max\+\_\+speed@{max\+\_\+speed}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{max\+\_\+speed}{max\_speed}}
+{\footnotesize\ttfamily float Spaceship.\+max\+\_\+speed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gibt die maximal erreichbare Geschwindigkeit zurück. Diese ist abhängig von der Basis-\/\+Geschwindigkeit, die durch das Impuls-\/\+Antrieb-\/\+Item festgelegt ist, und den Statuseffekten (Buffs/\+Debuffs), die auf dem \hyperlink{class_raumschiff}{Raumschiff} sind 
+
+Die Maximalgeschwindigkeit\mbox{\Hypertarget{class_spaceship_a9dede788e870c34a09db8d22e9ac61f6}\label{class_spaceship_a9dede788e870c34a09db8d22e9ac61f6}} 
+\index{Spaceship@{Spaceship}!rotation\+\_\+speed@{rotation\+\_\+speed}}
+\index{rotation\+\_\+speed@{rotation\+\_\+speed}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{rotation\+\_\+speed}{rotation\_speed}}
+{\footnotesize\ttfamily float Spaceship.\+rotation\+\_\+speed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gibt die maximal erreichbare Drehgeschwindigkeit zurück. Diese ist abhängig von der Basis-\/\+Dreheschwindigkeit und den Statuseffekten (Buffs/\+Debuffs), die auf dem \hyperlink{class_raumschiff}{Raumschiff} sind 
+
+Die Maximaldrehgeschwindigkeit\mbox{\Hypertarget{class_spaceship_a1daf5f7456d1b35b59eb6580b4ad5b9e}\label{class_spaceship_a1daf5f7456d1b35b59eb6580b4ad5b9e}} 
+\index{Spaceship@{Spaceship}!shield\+\_\+modifier@{shield\+\_\+modifier}}
+\index{shield\+\_\+modifier@{shield\+\_\+modifier}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{shield\+\_\+modifier}{shield\_modifier}}
+{\footnotesize\ttfamily float Spaceship.\+shield\+\_\+modifier\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gibt einen Schild-\/\+Multiplier zurück Dieser ist abhängig von den Statuseffekten (Buffs/\+Debuffs), die auf dem \hyperlink{class_raumschiff}{Raumschiff} sind 
+
+Der Schild-\/\+Multiplier\mbox{\Hypertarget{class_spaceship_ae627cd6b28077cea3ca7d50e1c3eea8d}\label{class_spaceship_ae627cd6b28077cea3ca7d50e1c3eea8d}} 
+\index{Spaceship@{Spaceship}!ship\+\_\+under\+\_\+attack@{ship\+\_\+under\+\_\+attack}}
+\index{ship\+\_\+under\+\_\+attack@{ship\+\_\+under\+\_\+attack}!Spaceship@{Spaceship}}
+\subsubsection{\texorpdfstring{ship\+\_\+under\+\_\+attack}{ship\_under\_attack}}
+{\footnotesize\ttfamily bool Spaceship.\+ship\+\_\+under\+\_\+attack\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gibt an, ob das \hyperlink{class_spaceship}{Spaceship} unter Beschuss ist 
+
+{\ttfamily true} wenn ja; sonst, {\ttfamily false}.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Leonard/\+Desktop/\+Stor\+Trok/\+Stor Trok/\+Assets/\+Stor Trok/\+Scripts/\+Spaceship/Spaceship.\+cs\end{DoxyCompactItemize}

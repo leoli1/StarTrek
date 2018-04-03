@@ -1,0 +1,4 @@
+TODO:
+Quantentorpedo Graphik verbessern
+Minimap-Graphik verbessern
+minimap-camerarange in korrekte abhängigkeit mit camera-aspect-ratio setzen

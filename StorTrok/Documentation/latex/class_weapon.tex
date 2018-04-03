@@ -1,0 +1,114 @@
+\hypertarget{class_weapon}{}\section{Weapon Class Reference}
+\label{class_weapon}\index{Weapon@{Weapon}}
+Inheritance diagram for Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_weapon}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_weapon_a06a50cad5241d643d24075e5409bd93c}\label{class_weapon_a06a50cad5241d643d24075e5409bd93c}} 
+virtual bool {\bfseries can\+\_\+shoot} ()
+\item 
+\mbox{\Hypertarget{class_weapon_ae3c1382d612bdbb63d0b9fe3ef161ce0}\label{class_weapon_ae3c1382d612bdbb63d0b9fe3ef161ce0}} 
+virtual void {\bfseries shoot} ()
+\item 
+\mbox{\Hypertarget{class_weapon_aaf86830a709d47b10586724061067efa}\label{class_weapon_aaf86830a709d47b10586724061067efa}} 
+float {\bfseries calc\+\_\+damage} (float shield)
+\item 
+override string \hyperlink{class_weapon_a8fcfb4f08ea22a8fc60790770a58b985}{get\+\_\+description\+\_\+text} ()
+\begin{DoxyCompactList}\small\item\em Erstellt einen Text, der im \hyperlink{class_inventar}{Inventar} angezeigt wird, wenn der Mauszeiger auf dem \hyperlink{class_item}{Item} ist \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_weapon_a01d002a5119acc492e945271fed9b027}\label{class_weapon_a01d002a5119acc492e945271fed9b027}} 
+void {\bfseries apply\+\_\+status\+\_\+effects} (\hyperlink{class_spaceship}{Spaceship} s)
+\item 
+\mbox{\Hypertarget{class_weapon_a0372c426e01d2c235e33cfcec4ad43ba}\label{class_weapon_a0372c426e01d2c235e33cfcec4ad43ba}} 
+abstract void {\bfseries animation} ()
+\item 
+\mbox{\Hypertarget{class_weapon_a3624e6919a144a759f997425c3986327}\label{class_weapon_a3624e6919a144a759f997425c3986327}} 
+abstract void {\bfseries deal\+\_\+damage} (int layer)
+\item 
+\mbox{\Hypertarget{class_weapon_a2a9005a2ba190f919f4d6dfcd351e097}\label{class_weapon_a2a9005a2ba190f919f4d6dfcd351e097}} 
+void {\bfseries weapon\+\_\+impact\+\_\+effect} (Vector3 local\+\_\+position, Transform parent, Color color)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_weapon_ac282a936305d6373091195527e339355}\label{class_weapon_ac282a936305d6373091195527e339355}} 
+static float {\bfseries calc\+\_\+damage} (float damage, float shield\+\_\+pen, float shield)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_weapon_a5dcd7cc67037c934dac557a95bd3df5e}\label{class_weapon_a5dcd7cc67037c934dac557a95bd3df5e}} 
+const float {\bfseries shield\+\_\+half\+\_\+dmg\+\_\+reduction} = 13
+\item 
+\mbox{\Hypertarget{class_weapon_a8ff40165275360718664552a765d20cc}\label{class_weapon_a8ff40165275360718664552a765d20cc}} 
+Player\+Weapon\+Positions {\bfseries special\+\_\+weapon\+\_\+position} = Player\+Weapon\+Positions.\+All
+\item 
+\mbox{\Hypertarget{class_weapon_ab3b4a28805bd1dfc6290c42a62b6daff}\label{class_weapon_ab3b4a28805bd1dfc6290c42a62b6daff}} 
+Raw\+Raumschiff\+Type {\bfseries special\+\_\+raw\+\_\+spaceship\+\_\+type} = Raw\+Raumschiff\+Type.\+All
+\item 
+\mbox{\Hypertarget{class_weapon_a61133e309b5126d35e5a3334023f1cdb}\label{class_weapon_a61133e309b5126d35e5a3334023f1cdb}} 
+float {\bfseries damage\+\_\+output\+\_\+multiplier} = 1
+\item 
+\mbox{\Hypertarget{class_weapon_ac1c1e18f2b60ef06ec8028413d0894a7}\label{class_weapon_ac1c1e18f2b60ef06ec8028413d0894a7}} 
+float {\bfseries arc\+\_\+range}
+\item 
+\mbox{\Hypertarget{class_weapon_aeb5d26e6edcc543e3e4a01b5452ee6ba}\label{class_weapon_aeb5d26e6edcc543e3e4a01b5452ee6ba}} 
+float {\bfseries base\+\_\+damage}
+\item 
+\mbox{\Hypertarget{class_weapon_a8b11eb278e126bf3f80a7f71b55f5904}\label{class_weapon_a8b11eb278e126bf3f80a7f71b55f5904}} 
+float {\bfseries shield\+\_\+pen}
+\item 
+\mbox{\Hypertarget{class_weapon_afc855beae6de1af99ac11001e1fe0522}\label{class_weapon_afc855beae6de1af99ac11001e1fe0522}} 
+float {\bfseries reload\+\_\+time} = 1
+\item 
+\mbox{\Hypertarget{class_weapon_a25932f73a2e0a7b040c100cbe0812678}\label{class_weapon_a25932f73a2e0a7b040c100cbe0812678}} 
+Game\+Object {\bfseries weapon\+\_\+object}
+\item 
+\mbox{\Hypertarget{class_weapon_a5801c0f3277caf61b8e005fa7552f3a2}\label{class_weapon_a5801c0f3277caf61b8e005fa7552f3a2}} 
+Color {\bfseries weapon\+\_\+color}
+\item 
+\mbox{\Hypertarget{class_weapon_a99a7385f94586c9fb39f33e38ba9ad4e}\label{class_weapon_a99a7385f94586c9fb39f33e38ba9ad4e}} 
+float {\bfseries last\+\_\+time\+\_\+shot} = -\/10
+\item 
+\mbox{\Hypertarget{class_weapon_a57a4230f8fed1bf702eaa2c7ab94f236}\label{class_weapon_a57a4230f8fed1bf702eaa2c7ab94f236}} 
+Game\+Object {\bfseries weapon\+\_\+position}
+\item 
+\mbox{\Hypertarget{class_weapon_a1fb20db3da5e83e012db1d4d45b0cfe5}\label{class_weapon_a1fb20db3da5e83e012db1d4d45b0cfe5}} 
+\hyperlink{class_status_effect}{Status\+Effect} \mbox{[}$\,$\mbox{]} {\bfseries status\+\_\+effects}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_weapon_a67d637088f248dd13048b89e592ea63a}\label{class_weapon_a67d637088f248dd13048b89e592ea63a}} 
+float {\bfseries damage}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_weapon_a8fcfb4f08ea22a8fc60790770a58b985}\label{class_weapon_a8fcfb4f08ea22a8fc60790770a58b985}} 
+\index{Weapon@{Weapon}!get\+\_\+description\+\_\+text@{get\+\_\+description\+\_\+text}}
+\index{get\+\_\+description\+\_\+text@{get\+\_\+description\+\_\+text}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+\_\+description\+\_\+text()}{get\_description\_text()}}
+{\footnotesize\ttfamily override string Weapon.\+get\+\_\+description\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Erstellt einen Text, der im \hyperlink{class_inventar}{Inventar} angezeigt wird, wenn der Mauszeiger auf dem \hyperlink{class_item}{Item} ist 
+
+\begin{DoxyReturn}{Returns}
+The description text.
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_item_ab868f8ccad92378f7352e3a9e0f755ff}{Item}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Leonard/\+Desktop/\+Stor\+Trok/\+Stor Trok/\+Assets/\+Stor Trok/\+Scripts/\+Items/\+Weapons/Weapon.\+cs\end{DoxyCompactItemize}

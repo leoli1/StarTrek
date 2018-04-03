@@ -1,0 +1,112 @@
+\hypertarget{class_schild}{}\section{Schild Class Reference}
+\label{class_schild}\index{Schild@{Schild}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_schild_a40ef8f568674cf3706e6bf6683ffaaa6}\label{class_schild_a40ef8f568674cf3706e6bf6683ffaaa6}} 
+{\bfseries Schild} (float pmax\+\_\+shield\+\_\+power, Game\+Object go)
+\item 
+\mbox{\Hypertarget{class_schild_a5e7107bb7b35569a16e6fb45bfa7230b}\label{class_schild_a5e7107bb7b35569a16e6fb45bfa7230b}} 
+\hyperlink{class_schild_part}{Schild\+Part} {\bfseries get\+\_\+best\+\_\+shield\+\_\+part} ()
+\item 
+\mbox{\Hypertarget{class_schild_a13b9f5d46a031c99ed3bccef5c8cf2d1}\label{class_schild_a13b9f5d46a031c99ed3bccef5c8cf2d1}} 
+void {\bfseries setup\+\_\+shield\+\_\+parts} ()
+\item 
+\mbox{\Hypertarget{class_schild_ab889daf4cdcc877ea186e41838fbdba8}\label{class_schild_ab889daf4cdcc877ea186e41838fbdba8}} 
+void {\bfseries change\+\_\+max\+\_\+power} (float pow)
+\item 
+\mbox{\Hypertarget{class_schild_aacef9213526f55a636e20129cff6c9ec}\label{class_schild_aacef9213526f55a636e20129cff6c9ec}} 
+\hyperlink{class_schild_part}{Schild\+Part} {\bfseries get\+\_\+shield\+\_\+part} (Schild\+Part\+Types part)
+\item 
+\mbox{\Hypertarget{class_schild_aaa9cdd476e49e4712023945c708a2f98}\label{class_schild_aaa9cdd476e49e4712023945c708a2f98}} 
+float {\bfseries get\+\_\+shield\+\_\+intensity\+\_\+at\+\_\+part} (Schild\+Part\+Types schildpart)
+\item 
+\mbox{\Hypertarget{class_schild_a53308fc46c6b82a05723d1acab5065ad}\label{class_schild_a53308fc46c6b82a05723d1acab5065ad}} 
+Schild\+Part\+Types {\bfseries get\+\_\+schildpart\+\_\+at\+\_\+angle} (float angle)
+\item 
+\mbox{\Hypertarget{class_schild_ac7c947e063505ef589837985abb3757e}\label{class_schild_ac7c947e063505ef589837985abb3757e}} 
+void {\bfseries apply\+\_\+dmg\+\_\+at\+\_\+shield\+\_\+part} (Schild\+Part\+Types schildpart, float dmg)
+\item 
+\mbox{\Hypertarget{class_schild_aecafbed64885f445ade907525947e05d}\label{class_schild_aecafbed64885f445ade907525947e05d}} 
+void {\bfseries regenerate\+\_\+shield} (float regen\+\_\+amount)
+\item 
+\mbox{\Hypertarget{class_schild_ab1131b0d35fe75404fffa90725546c67}\label{class_schild_ab1131b0d35fe75404fffa90725546c67}} 
+void {\bfseries transfer\+\_\+shield\+\_\+energy} (Schild\+Part\+Types p1, Schild\+Part\+Types p2, float amt)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_schild_a0e4558c57dc4265c120f8a8037acb8a7}\label{class_schild_a0e4558c57dc4265c120f8a8037acb8a7}} 
+static string {\bfseries get\+Part\+Name} (Schild\+Part\+Types part)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_schild_part}{Schild\+Part} \mbox{[}$\,$\mbox{]} {\bfseries shield\+\_\+parts}
+\item 
+\mbox{\Hypertarget{class_schild_a1f4825774fe941e08212dcc78f48a01a}\label{class_schild_a1f4825774fe941e08212dcc78f48a01a}} 
+float {\bfseries max\+\_\+shield\+\_\+power}
+\item 
+\mbox{\Hypertarget{class_schild_a59ff88d7aeec08d7867cd9afe317d039}\label{class_schild_a59ff88d7aeec08d7867cd9afe317d039}} 
+Game\+Object {\bfseries game\+Object}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_schild_ae625b7f328d43a3329c0fad580efe128}\label{class_schild_ae625b7f328d43a3329c0fad580efe128}} 
+static \hyperlink{class_range}{Range} {\bfseries top\+\_\+range} = new \hyperlink{class_range}{Range}(-\/45, 45)
+\item 
+\mbox{\Hypertarget{class_schild_a24f7eb6079dd872d9bf2491842786252}\label{class_schild_a24f7eb6079dd872d9bf2491842786252}} 
+static \hyperlink{class_range}{Range} {\bfseries right\+\_\+range} = new \hyperlink{class_range}{Range}(45,135)
+\item 
+\mbox{\Hypertarget{class_schild_ab5ad027e113698bcb9d93b27ebac090b}\label{class_schild_ab5ad027e113698bcb9d93b27ebac090b}} 
+static \hyperlink{class_range}{Range} {\bfseries bot\+\_\+range} = new \hyperlink{class_range}{Range} (135, 225)
+\item 
+\mbox{\Hypertarget{class_schild_a753a53a47f0c7e0abf6259514beeca3d}\label{class_schild_a753a53a47f0c7e0abf6259514beeca3d}} 
+static \hyperlink{class_range}{Range} {\bfseries left\+\_\+range} = new \hyperlink{class_range}{Range} (225, 315)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_schild_a063dc74127ed6aeb9b723331208d46ac}\label{class_schild_a063dc74127ed6aeb9b723331208d46ac}} 
+float {\bfseries max\+\_\+shield\+\_\+power\+\_\+per\+\_\+quarter}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_schild_a17c1d5d5d3d4cb1247b9705d69529acc}\label{class_schild_a17c1d5d5d3d4cb1247b9705d69529acc}} 
+\index{Schild@{Schild}!shield\+\_\+parts@{shield\+\_\+parts}}
+\index{shield\+\_\+parts@{shield\+\_\+parts}!Schild@{Schild}}
+\subsubsection{\texorpdfstring{shield\+\_\+parts}{shield\_parts}}
+{\footnotesize\ttfamily \hyperlink{class_schild_part}{Schild\+Part} \mbox{[}$\,$\mbox{]} Schild.\+shield\+\_\+parts}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} \hyperlink{class_schild_part}{SchildPart}[]\{
+        \textcolor{keyword}{new} \hyperlink{class_schild_part}{SchildPart}\{
+            part = SchildPartTypes.Left,
+            shield\_intensity = 0,
+            angle\_range = \hyperlink{class_schild}{Schild}.left\_range
+        \},
+        \textcolor{keyword}{new} \hyperlink{class_schild_part}{SchildPart}\{
+            part = SchildPartTypes.Right,
+            shield\_intensity = 0,
+            angle\_range = \hyperlink{class_schild}{Schild}.right\_range
+        \},
+        \textcolor{keyword}{new} \hyperlink{class_schild_part}{SchildPart}\{
+            part = SchildPartTypes.Top,
+            shield\_intensity = 0,
+            angle\_range = \hyperlink{class_schild}{Schild}.top\_range
+        \},
+        \textcolor{keyword}{new} \hyperlink{class_schild_part}{SchildPart}\{
+            part = SchildPartTypes.Bot,
+            shield\_intensity = 0,
+            angle\_range = \hyperlink{class_schild}{Schild}.bot\_range
+        \}
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Leonard/\+Desktop/\+Stor\+Trok/\+Stor Trok/\+Assets/\+Stor Trok/\+Scripts/\+Spaceship/Schild.\+cs\end{DoxyCompactItemize}

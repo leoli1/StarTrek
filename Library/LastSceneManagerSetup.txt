@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Star Trek/Scenes/GameScene1.unity
-  isLoaded: 1
-  isActive: 1

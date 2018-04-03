@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Stor Trok/Scenes/SektorenRaum.unity
+  isLoaded: 1
+  isActive: 1

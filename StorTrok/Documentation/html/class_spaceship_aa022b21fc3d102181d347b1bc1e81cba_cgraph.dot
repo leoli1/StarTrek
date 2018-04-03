@@ -1,0 +1,11 @@
+digraph "Spaceship.remove_statuseffects"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node115 [label="Spaceship.remove_statuseffects",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node115 -> Node116 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node116 [label="Spaceship.remove_statuseffect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#acc4b097a3bfdc0cbefe00246dbbcb534",tooltip="Entfernt einen speziellen StatusEffect "];
+  Node115 -> Node117 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node117 [label="Spaceship.apply_item\l_stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a465e9ba15923826055b2fd43be83d635",tooltip="Setzt die Schild- und Geschwindigkeitswerte den Items entsprechend fest "];
+}

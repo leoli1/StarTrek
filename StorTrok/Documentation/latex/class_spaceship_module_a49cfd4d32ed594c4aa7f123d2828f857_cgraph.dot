@@ -1,0 +1,19 @@
+digraph "SpaceshipModule.get_target_object"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="SpaceshipModule.get\l_target_object",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spaceship.decloak",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a46d165fefc78bd0cd729429b59a6bbb6",tooltip="Enttarnt das Raumschiff "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spaceship.apply_statuseffect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a0e562e25b6f8186c569fbc0577ef3bb6",tooltip="Fügt einen neuen StatusEffect zu dem Raumschiff hinzu "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spaceship.apply_item\l_stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a465e9ba15923826055b2fd43be83d635",tooltip="Setzt die Schild- und Geschwindigkeitswerte den Items entsprechend fest "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spaceship.get_spaceship",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a46ebdafb571812867be422a6beb4ad21",tooltip="Findet die Spaceship-Instanz, die auf dem GameObject oder in einem seiner Parents ist..."];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spaceship.apply_statuseffects",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a4170fcea7d1c1cb131e634a28ad3b271",tooltip="Fügt mehrere StatusEffects hinzu "];
+  Node7 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+}

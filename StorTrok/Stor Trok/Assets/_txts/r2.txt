@@ -1,0 +1,20 @@
+Start-Szene:
+"Start" : lädt das Spiel und die gespeicherten Spieler-Daten
+"Reset ..." : Neue Spieler-Daten mit entsprechendem Raumschiff
+Sektorenraum:
+Man fliege zu einem der Sterne, um z.B. eine Mission zu starten
+
+I : Inventar
+
+Weltraum:
+WASD : Rotation des Raumschiffs
+QE : Ändern der Geschwindigkeit
+Rechtsklick auf Gegner : Markiert diesen
+Shift : Sucht nächsten Gegner und markiert diesen
+R : Auto-Pilot zum ausgewähltem Ziel
+
+Linksklick: Bewegung der Kamera
+
+Boden:
+WASD : Bewegung des Spielers
+Space : Springen

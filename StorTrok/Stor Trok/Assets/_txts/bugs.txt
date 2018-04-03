@@ -1,0 +1,5 @@
+Bugs:
+-Selected Enemy-Daten auch auf der anderen seite (kamera um 180° um den spieler gedreht) zu sehen
+-Player movement data set "verschwinden" manchmal
+-defiant spawn im Hauptmenü
+-puls-phaser treffen manchmal asteroiden nicht sondern gehen einfach durch sie hindurch

@@ -1,0 +1,85 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a3950af30aaf1ffc852fbd79a7c6f14d5}\label{class_player_a3950af30aaf1ffc852fbd79a7c6f14d5}} 
+{\bfseries Player} (\hyperlink{class_spaceship}{Spaceship} s)
+\item 
+\mbox{\Hypertarget{class_player_aa9611f905a16638dba9c1873987fe4a9}\label{class_player_aa9611f905a16638dba9c1873987fe4a9}} 
+{\bfseries Player} (Player\+Environment\+Status pes)
+\item 
+\mbox{\Hypertarget{class_player_a1f3a4cb09f5c8c885caf9583194bd16e}\label{class_player_a1f3a4cb09f5c8c885caf9583194bd16e}} 
+void {\bfseries setup\+\_\+ship\+\_\+items} ()
+\item 
+\mbox{\Hypertarget{class_player_a249be50a7beb9083572a1c77b3271399}\label{class_player_a249be50a7beb9083572a1c77b3271399}} 
+void {\bfseries setup\+\_\+modules} ()
+\item 
+\mbox{\Hypertarget{class_player_a9cddbe8840fa9a7a33ac0520765b4853}\label{class_player_a9cddbe8840fa9a7a33ac0520765b4853}} 
+void {\bfseries setup\+\_\+weapons} ()
+\item 
+\mbox{\Hypertarget{class_player_a2ce7a482d9a6454f3278d052bcd02ef7}\label{class_player_a2ce7a482d9a6454f3278d052bcd02ef7}} 
+void {\bfseries setup\+\_\+inventory} ()
+\item 
+\mbox{\Hypertarget{class_player_a4933c82202c7a7cef04717fcede6e5d9}\label{class_player_a4933c82202c7a7cef04717fcede6e5d9}} 
+void {\bfseries setup\+\_\+antrieb} ()
+\item 
+\mbox{\Hypertarget{class_player_aabb5c185405b3f77747447918dec94b5}\label{class_player_aabb5c185405b3f77747447918dec94b5}} 
+void {\bfseries setup\+\_\+schild} ()
+\item 
+\mbox{\Hypertarget{class_player_a29ccabb89925e1d4ef80e28a2b7da8e9}\label{class_player_a29ccabb89925e1d4ef80e28a2b7da8e9}} 
+List$<$ \hyperlink{class_weapon}{Weapon} $>$ {\bfseries get\+\_\+top\+\_\+weapons} ()
+\item 
+\mbox{\Hypertarget{class_player_a6db9aa013dbb55802bce008b363490e0}\label{class_player_a6db9aa013dbb55802bce008b363490e0}} 
+List$<$ \hyperlink{class_weapon}{Weapon} $>$ {\bfseries get\+\_\+bot\+\_\+weapons} ()
+\item 
+\mbox{\Hypertarget{class_player_a8708e99901002a2e5fe9e4b0a32459f5}\label{class_player_a8708e99901002a2e5fe9e4b0a32459f5}} 
+\hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} {\bfseries get\+\_\+top\+\_\+weapon\+\_\+position} ()
+\item 
+\mbox{\Hypertarget{class_player_afb7246586bfac930d9c026f0ce4d82f4}\label{class_player_afb7246586bfac930d9c026f0ce4d82f4}} 
+\hyperlink{class_spaceship_weapon_position}{Spaceship\+Weapon\+Position} {\bfseries get\+\_\+bot\+\_\+weapon\+\_\+position} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_ad4c2ab5c71c359ab76459daa397c4614}\label{class_player_ad4c2ab5c71c359ab76459daa397c4614}} 
+const int {\bfseries environment\+\_\+layer} = 10
+\item 
+\mbox{\Hypertarget{class_player_af674941521cbd725210217e204ad7a99}\label{class_player_af674941521cbd725210217e204ad7a99}} 
+const int {\bfseries player\+\_\+layer} = 9
+\item 
+\mbox{\Hypertarget{class_player_a5a5b105285ae9d74073d58dd8dc94fb5}\label{class_player_a5a5b105285ae9d74073d58dd8dc94fb5}} 
+const int {\bfseries enemy\+\_\+layer} = 8
+\item 
+\mbox{\Hypertarget{class_player_ac8bcb50bf826874dfa2d162af367d013}\label{class_player_ac8bcb50bf826874dfa2d162af367d013}} 
+string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_player_aed37167e4117c2518a154e73fbfc103c}\label{class_player_aed37167e4117c2518a154e73fbfc103c}} 
+int {\bfseries money}
+\item 
+\mbox{\Hypertarget{class_player_a0e958a88a824f08873837fcf7d22344b}\label{class_player_a0e958a88a824f08873837fcf7d22344b}} 
+\hyperlink{class_spaceship}{Spaceship} {\bfseries spaceship}
+\item 
+\mbox{\Hypertarget{class_player_a27e922aea5e6371a33c0fa97e10413cd}\label{class_player_a27e922aea5e6371a33c0fa97e10413cd}} 
+Player\+Environment\+Status {\bfseries player\+\_\+environment\+\_\+status} = Player\+Environment\+Status.\+None
+\item 
+\mbox{\Hypertarget{class_player_a333843d71092ceb812d2f2715e6a20fa}\label{class_player_a333843d71092ceb812d2f2715e6a20fa}} 
+\hyperlink{class_inventar}{Inventar} {\bfseries player\+\_\+inventar}
+\item 
+\mbox{\Hypertarget{class_player_a8cd10622dac298adaa763e6ae853e9a5}\label{class_player_a8cd10622dac298adaa763e6ae853e9a5}} 
+Vector3 {\bfseries last\+\_\+coordinate}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_ac7317ab15537dffd0222fc019fe28c5e}\label{class_player_ac7317ab15537dffd0222fc019fe28c5e}} 
+string {\bfseries player\+\_\+data\+\_\+path}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_player_a626d7b1a0a69ccb17979ea7a0728fca7}\label{class_player_a626d7b1a0a69ccb17979ea7a0728fca7}} 
+static \hyperlink{class_player}{Player} {\bfseries player}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Leonard/\+Desktop/\+Stor\+Trok/\+Stor Trok/\+Assets/\+Stor Trok/\+Scripts/\+Player/Player.\+cs\end{DoxyCompactItemize}

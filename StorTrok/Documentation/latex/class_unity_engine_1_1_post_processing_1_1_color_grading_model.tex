@@ -1,0 +1,87 @@
+\hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model}{}\section{Unity\+Engine.\+Post\+Processing.\+Color\+Grading\+Model Class Reference}
+\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model}\index{Unity\+Engine.\+Post\+Processing.\+Color\+Grading\+Model@{Unity\+Engine.\+Post\+Processing.\+Color\+Grading\+Model}}
+
+
+Inheritance diagram for Unity\+Engine.\+Post\+Processing.\+Color\+Grading\+Model\+:
+% FIG 0
+
+
+Collaboration diagram for Unity\+Engine.\+Post\+Processing.\+Color\+Grading\+Model\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_unity_engine_1_1_post_processing_1_1_color_grading_model_1_1_basic_settings}{Basic\+Settings}
+\item 
+struct \hyperlink{struct_unity_engine_1_1_post_processing_1_1_color_grading_model_1_1_channel_mixer_settings}{Channel\+Mixer\+Settings}
+\item 
+struct \hyperlink{struct_unity_engine_1_1_post_processing_1_1_color_grading_model_1_1_color_wheels_settings}{Color\+Wheels\+Settings}
+\item 
+struct \hyperlink{struct_unity_engine_1_1_post_processing_1_1_color_grading_model_1_1_curves_settings}{Curves\+Settings}
+\item 
+struct \hyperlink{struct_unity_engine_1_1_post_processing_1_1_color_grading_model_1_1_linear_wheels_settings}{Linear\+Wheels\+Settings}
+\item 
+struct \hyperlink{struct_unity_engine_1_1_post_processing_1_1_color_grading_model_1_1_log_wheels_settings}{Log\+Wheels\+Settings}
+\item 
+struct \hyperlink{struct_unity_engine_1_1_post_processing_1_1_color_grading_model_1_1_settings}{Settings}
+\item 
+struct \hyperlink{struct_unity_engine_1_1_post_processing_1_1_color_grading_model_1_1_tonemapping_settings}{Tonemapping\+Settings}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6}{Tonemapper} \{ {\bfseries None}, 
+\hyperlink{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6a01ec90d9624dce53f3f3492882841fe6}{Tonemapper.\+A\+C\+ES}, 
+\hyperlink{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6ae9bb5320b3890b6747c91b5a71ae5a01}{Tonemapper.\+Neutral}
+ \}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a57da7f62b07b7109f15758571a852586}\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a57da7f62b07b7109f15758571a852586}} 
+enum {\bfseries Color\+Wheel\+Mode} \{ {\bfseries Linear}, 
+{\bfseries Log}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a64a6bc1783ee8f2f66e4eb6c13385eed}\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a64a6bc1783ee8f2f66e4eb6c13385eed}} 
+override void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a2cdf5183a4882e9ae3439b22fe935f12}\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a2cdf5183a4882e9ae3439b22fe935f12}} 
+override void {\bfseries On\+Validate} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a340b78e970e8cc5c66abbd4957d88b9c}\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a340b78e970e8cc5c66abbd4957d88b9c}} 
+\hyperlink{struct_unity_engine_1_1_post_processing_1_1_color_grading_model_1_1_settings}{Settings} {\bfseries settings}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a05a2c8285ca219e5846080bec932b988}\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a05a2c8285ca219e5846080bec932b988}} 
+bool {\bfseries is\+Dirty}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model_ab93b4bd2bb81196e8751efa337f451f3}\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model_ab93b4bd2bb81196e8751efa337f451f3}} 
+Render\+Texture {\bfseries baked\+Lut}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6}\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6}} 
+\index{Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model@{Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model}!Tonemapper@{Tonemapper}}
+\index{Tonemapper@{Tonemapper}!Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model@{Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model}}
+\subsubsection{\texorpdfstring{Tonemapper}{Tonemapper}}
+{\footnotesize\ttfamily enum \hyperlink{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6}{Unity\+Engine.\+Post\+Processing.\+Color\+Grading\+Model.\+Tonemapper}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+C\+ES@{A\+C\+ES}!Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model@{Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model}}\index{Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model@{Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model}!A\+C\+ES@{A\+C\+ES}}}\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6a01ec90d9624dce53f3f3492882841fe6}\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6a01ec90d9624dce53f3f3492882841fe6}} 
+A\+C\+ES&A\+C\+ES Filmic reference tonemapper. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Neutral@{Neutral}!Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model@{Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model}}\index{Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model@{Unity\+Engine\+::\+Post\+Processing\+::\+Color\+Grading\+Model}!Neutral@{Neutral}}}\mbox{\Hypertarget{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6ae9bb5320b3890b6747c91b5a71ae5a01}\label{class_unity_engine_1_1_post_processing_1_1_color_grading_model_a4955bb9dfed7e27c93e7493ff66f3de6ae9bb5320b3890b6747c91b5a71ae5a01}} 
+Neutral&Neutral tonemapper (based off John Hable\textquotesingle{}s \& Jim Hejl\textquotesingle{}s work). \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Leonard/\+Desktop/\+Stor\+Trok/\+Stor Trok/\+Assets/\+Post\+Processing/\+Runtime/\+Models/Color\+Grading\+Model.\+cs\end{DoxyCompactItemize}

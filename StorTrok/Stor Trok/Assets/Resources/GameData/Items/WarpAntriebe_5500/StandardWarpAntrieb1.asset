@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688ff04c78d0a4e789eb3e121e9cdcb7, type: 3}
+  m_Name: StandardWarpAntrieb1
+  m_EditorClassIdentifier: 
+  ID: 5501
+  inventory_tex: {fileID: 0}
+  name: Standard Warpantrieb I
+  mark_number: 1
+  cost: 0
+  item_type: 2
+  max_warpfactor: 5

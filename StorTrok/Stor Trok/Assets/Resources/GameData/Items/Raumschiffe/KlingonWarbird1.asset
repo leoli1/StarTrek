@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e8c2f14428547c4a9912a073e034f8, type: 3}
+  m_Name: KlingonWarbird1
+  m_EditorClassIdentifier: 
+  ID: 101
+  inventory_tex: {fileID: 0}
+  name: Klingon Warbird I
+  mark_number: 0
+  cost: 0
+  item_type: 4
+  spaceship_object: {fileID: 1658924387361786, guid: 95f7ccc12a8c640f589a30f7140b027a,
+    type: 2}
+  raumschiff_type: 5
+  raw_raumschiff_type: 2
+  rotation_speed: 50
+  acceleration: 2
+  structural_integrity: 100
+  structural_integrity_regeneration_rate: 0.1
+  spaceship_module_capacity: 0
+  standard_schild: {fileID: 11400000, guid: 631aa659c56384f3bbedb51bfdcdbed6, type: 2}
+  standard_impuls_antrieb: {fileID: 11400000, guid: 55724d8338fca428098d1caa4f2a5344,
+    type: 2}
+  standard_warp_antrieb: {fileID: 11400000, guid: 4fee08cee9046403eaedf97ed4c4717e,
+    type: 2}
+  standard_top_weapons: []
+  standard_bot_weapons: []
+  standard_spaceship_modules: []

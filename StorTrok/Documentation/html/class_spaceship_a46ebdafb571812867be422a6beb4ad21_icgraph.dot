@@ -1,0 +1,15 @@
+digraph "Spaceship.get_spaceship"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node102 [label="Spaceship.get_spaceship",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node102 -> Node103 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node103 [label="SpaceshipModule.get\l_target_object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship_module.html#a49cfd4d32ed594c4aa7f123d2828f857",tooltip="Gets the target object. (Only Player!!!) "];
+  Node102 -> Node104 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node104 [label="Spaceship.destroy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a720b65b98cede503822fcb0141873f97",tooltip="Zerstört das Raumschiff "];
+  Node104 -> Node105 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node105 [label="Spaceship.check_destroyed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a3f59582cf969851ab6633b4cf1047f20",tooltip="Prüft, ob das Raumschiff zerstört werden soll und tut dies ggf. "];
+  Node105 -> Node106 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node106 [label="Spaceship.apply_damage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#aec76ac225db6e42b52afb3aac04f7cad",tooltip="Richtet Schaden am Raumschiff an "];
+}

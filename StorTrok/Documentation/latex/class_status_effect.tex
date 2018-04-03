@@ -1,0 +1,89 @@
+\hypertarget{class_status_effect}{}\section{Status\+Effect Class Reference}
+\label{class_status_effect}\index{Status\+Effect@{Status\+Effect}}
+Inheritance diagram for Status\+Effect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_status_effect}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_status_effect_a4dbc6146f97473e2efaafb25a78ebb5a}\label{class_status_effect_a4dbc6146f97473e2efaafb25a78ebb5a}} 
+static float {\bfseries complete\+\_\+effects\+\_\+intensity} (Effect\+Types type, List$<$ \hyperlink{class_status_effect}{Status\+Effect} $>$ effects)
+\item 
+\mbox{\Hypertarget{class_status_effect_a7122b9aa5ee8469dcc92f8ad45a4fba9}\label{class_status_effect_a7122b9aa5ee8469dcc92f8ad45a4fba9}} 
+static bool {\bfseries is\+\_\+stunned} (List$<$ \hyperlink{class_status_effect}{Status\+Effect} $>$ effects)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_status_effect_a696f2821e6d224c658e8b87d1ce7e796}\label{class_status_effect_a696f2821e6d224c658e8b87d1ce7e796}} 
+string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_status_effect_a74029b6847e6b0e538b5e7fc6a762a6c}\label{class_status_effect_a74029b6847e6b0e538b5e7fc6a762a6c}} 
+string {\bfseries description}
+\item 
+\mbox{\Hypertarget{class_status_effect_abf37d960e019f77df374e08751044612}\label{class_status_effect_abf37d960e019f77df374e08751044612}} 
+float {\bfseries start\+\_\+time}
+\item 
+\mbox{\Hypertarget{class_status_effect_a36da090a484cfbcc4ce329f426f5c5a1}\label{class_status_effect_a36da090a484cfbcc4ce329f426f5c5a1}} 
+float {\bfseries duration}
+\item 
+\mbox{\Hypertarget{class_status_effect_a61d875b09e0223962b6ef475f0f540aa}\label{class_status_effect_a61d875b09e0223962b6ef475f0f540aa}} 
+Effect\+Types {\bfseries effect\+\_\+type}
+\item 
+float \hyperlink{class_status_effect_a8440863026d4e9275ab2c701ddef7938}{effect\+\_\+intensity}
+\begin{DoxyCompactList}\small\item\em Wie dieses effect type dieses attribute des spaceships beeinflusst, 1 ist standardmäßig keine beeinflussung, $>$1 ein buff, $<$1 ein debuff \end{DoxyCompactList}\item 
+float \hyperlink{class_status_effect_a3504e8fd0ecb620a2678f5cce8660d44}{multiple\+\_\+effects\+\_\+intensity\+\_\+multplier}
+\begin{DoxyCompactList}\small\item\em mehrere effekte des gleichen typs haben nicht dieselbe auswirkung auf die gesamte intensität, sondern sie nimmt mit der anzahl an effekten ab(/zu) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \hyperlink{class_status_effect}{Status\+Effect} $>$ {\bfseries status\+\_\+effect\+\_\+presets}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_status_effect_a8440863026d4e9275ab2c701ddef7938}\label{class_status_effect_a8440863026d4e9275ab2c701ddef7938}} 
+\index{Status\+Effect@{Status\+Effect}!effect\+\_\+intensity@{effect\+\_\+intensity}}
+\index{effect\+\_\+intensity@{effect\+\_\+intensity}!Status\+Effect@{Status\+Effect}}
+\subsubsection{\texorpdfstring{effect\+\_\+intensity}{effect\_intensity}}
+{\footnotesize\ttfamily float Status\+Effect.\+effect\+\_\+intensity}
+
+
+
+Wie dieses effect type dieses attribute des spaceships beeinflusst, 1 ist standardmäßig keine beeinflussung, $>$1 ein buff, $<$1 ein debuff 
+
+\mbox{\Hypertarget{class_status_effect_a3504e8fd0ecb620a2678f5cce8660d44}\label{class_status_effect_a3504e8fd0ecb620a2678f5cce8660d44}} 
+\index{Status\+Effect@{Status\+Effect}!multiple\+\_\+effects\+\_\+intensity\+\_\+multplier@{multiple\+\_\+effects\+\_\+intensity\+\_\+multplier}}
+\index{multiple\+\_\+effects\+\_\+intensity\+\_\+multplier@{multiple\+\_\+effects\+\_\+intensity\+\_\+multplier}!Status\+Effect@{Status\+Effect}}
+\subsubsection{\texorpdfstring{multiple\+\_\+effects\+\_\+intensity\+\_\+multplier}{multiple\_effects\_intensity\_multplier}}
+{\footnotesize\ttfamily float Status\+Effect.\+multiple\+\_\+effects\+\_\+intensity\+\_\+multplier}
+
+
+
+mehrere effekte des gleichen typs haben nicht dieselbe auswirkung auf die gesamte intensität, sondern sie nimmt mit der anzahl an effekten ab(/zu) 
+
+\mbox{\Hypertarget{class_status_effect_aa41970274c9d7217ce92fbed68a50583}\label{class_status_effect_aa41970274c9d7217ce92fbed68a50583}} 
+\index{Status\+Effect@{Status\+Effect}!status\+\_\+effect\+\_\+presets@{status\+\_\+effect\+\_\+presets}}
+\index{status\+\_\+effect\+\_\+presets@{status\+\_\+effect\+\_\+presets}!Status\+Effect@{Status\+Effect}}
+\subsubsection{\texorpdfstring{status\+\_\+effect\+\_\+presets}{status\_effect\_presets}}
+{\footnotesize\ttfamily List$<$\hyperlink{class_status_effect}{Status\+Effect}$>$ Status\+Effect.\+status\+\_\+effect\+\_\+presets\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} List<StatusEffect>\{
+        \textcolor{keyword}{new} \hyperlink{class_status_effect}{StatusEffect} \{ name = \textcolor{stringliteral}{"Slow"}, description = \textcolor{stringliteral}{"Deine Geschwindigkeit ist reduziert"}, 
+      duration = 2.5f, effect\_type = EffectTypes.Speed, \hyperlink{class_status_effect_a8440863026d4e9275ab2c701ddef7938}{effect\_intensity} = 0.75f, 
+      \hyperlink{class_status_effect_a3504e8fd0ecb620a2678f5cce8660d44}{multiple\_effects\_intensity\_multplier} = 0.75f \},
+        \textcolor{keyword}{new} \hyperlink{class_status_effect}{StatusEffect} \{ name = \textcolor{stringliteral}{"Speed Buff"}, description = \textcolor{stringliteral}{"Geschwindigkeit ist erhöht"}, 
+      duration = 1.5f, effect\_type = EffectTypes.Speed, \hyperlink{class_status_effect_a8440863026d4e9275ab2c701ddef7938}{effect\_intensity} = 1.3f, 
+      \hyperlink{class_status_effect_a3504e8fd0ecb620a2678f5cce8660d44}{multiple\_effects\_intensity\_multplier} = 0.8f\}
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/\+Leonard/\+Desktop/\+Stor\+Trok/\+Stor Trok/\+Assets/\+Stor Trok/\+Scripts/\+Spaceship/Status\+Effect.\+cs\end{DoxyCompactItemize}

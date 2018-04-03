@@ -1,0 +1,9 @@
+digraph "Spaceship.set_shield_indicator_color"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node136 [label="Spaceship.set_shield\l_indicator_color",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node136 -> Node137 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node137 [label="Spaceship.warp_in",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a4a932f067ed922c34f82fa4479dbdf4d",tooltip="Lässt das Raumschiff reinwarpen "];
+}

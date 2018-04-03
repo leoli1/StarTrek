@@ -1,0 +1,11 @@
+digraph "Spaceship.fix_z_rotation"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node87 [label="Spaceship.fix_z_rotation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node87 -> Node88 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node88 [label="Spaceship.fix_rotation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#afd788bbc8497cb88acb1c4633a3b1bb3",tooltip="Nur für einige ComputerPlayer Da das Raumschiff sich in lokalen-Achse maximal um einen bestimmten Win..."];
+  Node87 -> Node89 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node89 [label="Spaceship.abort_auto\l_navigation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spaceship.html#a888beaebbb837300c645eb0bc3e979e0",tooltip="Bricht den Auto-Piloten ab "];
+}
